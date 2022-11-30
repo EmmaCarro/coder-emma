@@ -1,0 +1,116 @@
+/*  */
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografia general */
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-color: blanchedalmond;
+
+    /* Sacarle el subrayado a los links */
+    text-decoration: none;
+}
+
+/* TODAS LAS PAGINAS */
+/* BARRA DE NAVEGACION */
+/* Header entero */
+header {
+    background-color: cadetblue;
+}
+
+/* Barra de navegacion de la pagina */
+.navbar {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+}
+
+/* Titulo de la pagina */
+.navbar__navtitle {
+    text-decoration: none;
+    font-family: 'Caveat', italic;
+    color: burlywood;
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0px;
+}
+
+/* Sin puntos en la lista de la barra de navegacion */
+.navbar__navlinks {
+    list-style-type: none;
+}
+
+/* Icono o logo al lado de titulo de pagina */
+.navbar__navtitle-logoimg {
+    border-radius: 20px;
+    margin: 10px;
+    padding-right: 10px;
+}
+
+/* TODAS LAS PAGINAS */
+/* FOOTER */
+/* Footer general */
+footer {
+    background-color:cadetblue;
+    margin: 0px;
+}
+
+/* Titulo de "Contacto" */
+.footer__links--titulo {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Titulo de "Seguinos" */
+.footer__redes--titulo {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Iconos del footer */
+.footericons {
+    width: 32px;
+    height: 32px; 
+}
+
+
+/* TODAS LAS PAGINAS EXCEPTO HOME */
+/* Navegacion o breadcrumbs */
+.breadcrumbs {
+
+}
+
+/* Titulo */
+.title {
+
+}
+
+/* Subtitulo */
+.subtitle {
+
+}
+
+
+/* PAGINAS DE ARTICULOS */
+/* Tabla de estadisticas */
+.tabla_estadisticas {
+
+}
+
+/* Mapa debajo de estadisticas */
+.mapa {
+
+}
+
+/* Galeria de imagenes del articulo */
+.listado_imagenes {
+
+}
+
+
+

@@ -1,0 +1,307 @@
+/*  */
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Sacarle el subrayado a los links */
+    text-decoration: none;
+}
+
+/* Tipografia general */
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-color: blanchedalmond;
+}
+
+/* TODAS LAS PAGINAS */
+/* BARRA DE NAVEGACION */
+/* Header entero */
+header {
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+/* Barra de navegacion de la pagina */
+header {
+    padding: 20px 10px;
+}
+
+/* Contenedor de la barra de navegacion */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Titulo de la pagina */
+.navbar_title {
+    text-decoration: none;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0 auto 0 10px;
+}
+.navbar_title a {
+    font-family: 'Caveat', italic;
+    color: burlywood;
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0 5px;
+}
+
+/* Lista de la barra de navegacion. Los links */
+.navbar {
+    /* Sin puntos en la lista de la barra de navegacion */
+    list-style-type: none;
+
+    display: flex;
+    margin: 0 10px 0 auto;
+}
+
+/* Icono o logo al lado de titulo de pagina */
+.navbar_title img {
+    display: flex;
+    justify-content: center;
+
+    border-radius: 50%;
+    padding-right: 5px;
+}
+
+/* Links de la navbar */
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {    
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: blanchedalmond;
+}
+
+
+/* TODAS LAS PAGINAS */
+/* FOOTER */
+/* Footer general */
+footer {
+    background-color:cadetblue;
+}
+.pie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5%;
+}
+
+/* Titulo de "Contacto" */
+.footer__links a {
+    color: blanchedalmond;
+    margin-bottom: 20px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer__links--titulo {
+    font-weight: 600;
+    font-size: 18px;
+    color: burlywood;
+    margin-bottom: 40px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Titulo de "Seguinos" */
+.footer__redes--titulo {
+    font-weight: 600;
+    font-size: 18px;
+    color: burlywood;
+    margin-bottom: 40px;
+}
+
+/* Iconos del footer */
+.footericons {
+    width: 28px;
+    height: 28px; 
+    margin-right: 10px;
+}
+
+
+/* HOME */
+/* BANNER */
+.hero {
+    font-weight: 300;
+    font-size: 28px;
+    background-image: url("https://picsum.photos/1024/300");
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	min-height: 300px;
+    max-height: 350px;
+    color: white;
+    margin: 0 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: 1px 1px 5px black;
+}
+
+/* HOME */
+/* SEPARADOR DEBAJO DEL BANNER */
+/* Contenedor de todo el separador */
+.separador_frase {
+    background-color:lemonchiffon;
+    min-height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 30% 0 30%;
+}
+
+/* Texto del separador */
+.separador_frase-frase {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    color: coral;
+    opacity: 75%;
+}
+
+/* Lineas que acompañan el texto */
+.separador_frase-linea {
+    width: 20%;
+    border: 1px solid coral;
+    opacity: 25%;
+}
+
+
+/* HOME */
+/* FRASES INFORMATIVAS EN 4 CUBOS */
+/* contenedor de cubos */
+.separador_cubos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}
+
+/* Cubos en general */
+.separador_cubos div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Cubo de titulo */
+.separador_cubos__titulo {
+    background-color: cadetblue;
+    font-weight: 100;
+    font-size: 30px;
+    color: azure;
+    text-align: center;
+    padding: 7%;
+}
+
+/* Cubo de texto */
+.separador_cubos__texto {
+    background-color: honeydew;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+    padding: 7%;
+}
+
+/* HOME */
+/* TARJETAS DESTACADOS */
+/* Solapa "Destacado" arriba de cada tarjeta */
+.tarjeta__label {
+    color:cadetblue;
+    background-color: honeydew;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: aquamarine;
+    padding: 10px;
+    margin-bottom: 1px;
+    width: 70px;
+    padding: 5px;
+}
+
+/* DIV que engloba la imagen, titulo y texto de la tarjeta */
+.tarjeta__contenido {
+    background-color: powderblue;
+    border-radius: 10px;
+    width: 300px;
+    padding: 5px;
+}
+
+/* Imagen del articulo destacado */
+.tarjeta__contenido--imagen {
+    border-radius: 10px;
+}
+
+/* Titulo del articulo destacado */
+.tarjeta__contenido--titulo {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:darkcyan;
+}
+
+/* Texto del articulo destacado */
+.tarjeta__contenido--texto {
+    font-size: 12px;
+    font-weight: 500;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* HOME */
+/* SEPARADOR "DE CIRCULOS" ANTES DE FOOTER */
+.separador_circulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding: 7%;
+    background-color:lemonchiffon;
+}
+
+/* Contenedores de cada imagen y texto del separador */
+.separador_circulos__combo {    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Imagenes del separador antes del footer */
+.separador_circulos__img {
+    border-radius: 40px;
+    opacity: 40%;
+    filter:grayscale(100%);
+}
+
+/* Texto del separador antes del footer */
+.separador_circulos__txt {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5%;
+}
