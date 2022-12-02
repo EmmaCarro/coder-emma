@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Verano Feel</title>
+
+    <link rel="shortcut icon" href="../imgs/favicon.png" type="image/x-icon" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <h1 class="navtitle">
+                <a href="../index.html"><img src="https://picsum.photos/32/32" alt="Ir a inicio" /></a>
+                <a href="../index.html">VERANO FEEL</a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="../index.html" class="linktext">Inicio</a>
+                </li>
+                <li>
+                    <a href="../pags/galeria.html" class="linktext">Galeria</a>
+                </li>
+                <li>
+                    <a href="../pags/mapa.html" class="linktext">Mapa</a>
+                </li>
+                <li>
+                    <a href="../pags/contacto.html" class="linktext">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <div class="breadcrumbs">
+            <p><a href="../index.html">Inicio</a> > Contacto</p>
+        </div>
+
+
+        <section>
+            <h1 class="title">Contacto</h1>
+
+            <h2 class="subtitle">Envianos un mensaje y te respondemos a la brevedad</h2>
+            <br />
+
+            <form>
+                <fieldset>
+                <legend>Datos de contacto</legend>
+
+                <br />
+                <br />
+
+                <label for="nombre">Nombre y apellido</label>
+                <input type="text" name="nombre" placeholder="Nombres" />
+                <input type="text" name="nombre" placeholder="Apellidos" />
+
+                <br />
+                <br />
+
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Email" />
+
+                <br />
+                <br />
+
+                <label for="numero">Teléfono</label>
+                <input type="number" name="numero" placeholder="Numero" />
+
+                <br />
+                <br />
+
+                <div>Alquiler de su interes:</div>
+                <select name="tipo">
+                  <option value="casa">Casa</option>
+                  <option value="ph">PH</option>
+                  <option value="duplex">Dúplex</option>
+                  <option value="depto">Departamento</option>
+                </select>
+                
+                <br />
+                <br />
+
+                <label for="fecha">Fecha de interes:</label>
+                <div>desde</div><input type="date" name="fecha" />
+                <div>hasta</div><input type="date" name="fecha" placeholder="Hasta" />
+
+                <br />
+                <br />
+
+                <div>Cantidad de personas:</div>
+
+                <input type="checkbox" name="personas" id="1personas" />  <label for="1personas">1</label>
+                <input type="checkbox" name="personas" id="2personas" />  <label for="2personas">2</label>
+                <input type="checkbox" name="personas" id="3personas" />  <label for="3personas">3</label>
+                <input type="checkbox" name="personas" id="4personas" />  <label for="4personas">4</label>
+                <input type="checkbox" name="personas" id="5personas" />  <label for="5personas">5 o más</label>
+
+                <br />
+                <br />
+
+                <div>¿Lleva mascotas?</div>
+                    <input type="radio" name="mascotas" id="simascota" /><label for="simascota">Si</label>
+                    <input type="radio" name="mascotas" id="nomascota" /><label for="nomascota">No</label>
+
+                <br />
+                <br />
+                
+                <button type="reset">Limpiar formulario</button>
+                <button type="submit">Enviar</button>
+
+            </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h5 class="footertitle">Contacto</h5>
+        <ul>
+            <li>
+                <a href="" class="linktext">
+                    <p>+54 11 6 XXX XXXX</p>
+                    <img class="footericons" src="../imgs/icons8-whatsapp-64.png" alt="Whatsapp" />
+                </a>
+            </li>
+            <li>
+                <a href="" class="linktext">
+                    <p>veranofeel@veranofeel.com.ar</p>
+                    <img class="footericons" src="../imgs/icons8-secured-letter-64.png" alt="Email" />
+                </a>
+            </li>
+        </ul>
+
+        <h5 class="footertitle">Seguinos!</h5>
+        <ul>
+            <li>
+                <a href="">
+                    <img class="footericons" src="../imgs/icons8-instagram-64.png" alt="Instagram" />
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="footericons" src="../imgs/icons8-facebook-64.png" alt="Facebook" />
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="footericons" src="../imgs/icons8-twitter-squared-64.png" alt="Twitter" />
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="footericons" src="../imgs/icons8-youtube-64.png" alt="Youtube" />
+                </a>
+            </li>
+        </ul>
+               
+    </footer>
+
+       
+</body>
+
+
+</html>
