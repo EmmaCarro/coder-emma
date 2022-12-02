@@ -1,0 +1,251 @@
+/*  */
+/* GENERAL */
+/* Tipografia general */
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-color: blanchedalmond;
+}
+
+/* Sacarle el subrayado a los links de clase linktext */
+a.linktext {
+    text-decoration: none;
+}
+
+/* TODAS LAS PAGINAS */
+/* BARRA DE NAVEGACION */
+/* Header entero */
+header {
+    background-color: cadetblue;
+}
+
+/* Sin puntos en la lista de la barra de navegacion */
+nav ul {
+    list-style-type: none;
+    
+}
+
+/* Barra de navegacion de la pagina */
+.navbar {
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+}
+
+/* Titulo de la pagina */
+.navtitle a {
+    text-decoration: none;
+    font-family: 'Caveat', italic;
+    color: burlywood;
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0px;
+}
+
+/* Icono o logo al lado de titulo de pagina */
+.navtitle a img {
+    border-radius: 20px;
+    margin: 10px;
+    padding-right: 10px;
+}
+
+/* HOME */
+/* BANNER */
+.hulk {
+    font-weight: 300;
+    font-size: 28px;
+    background-image: url("https://picsum.photos/1024/300");
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	height: 300px;
+    color: burlywood;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* HOME */
+/* SEPARADOR DEBAJO DEL BANNER */
+/* Contenedor de todo el separador */
+.separador1 {
+    background-color:lemonchiffon;
+    padding: 50px;
+    margin: 0px;
+}
+
+/* Texto del separador */
+.haiku {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* HOME */
+/* FRASES INFORMATIVAS EN 4 CUBOS */
+/* contenedor de primera linea de frase info */
+.haikuscontenedor1 {
+    width: 50%;
+    display: inline-block;
+}
+
+/* Cubo 1, arriba izquierda */
+.articulohaiku1 {
+    background-color: cadetblue;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 30px;
+    padding: 28px;
+    text-align: center;
+    color: azure;
+}
+
+/* Cubo 2, arriba derecha */
+.articulohaiku2 {
+    background-color: honeydew;
+    display: inline-block;
+    padding: 60px;
+    height: 60px;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* contenedor de segunda linea de frase info */
+.haikuscontenedor2 {
+    width: 50%;
+    display: inline-block;
+}
+
+/* Cubo 3, abajo izquierda */
+.articulohaiku3 {
+    background-color: honeydew;
+    display: inline-block;
+    padding: 60px;
+    height: 60px;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Cubo 4, abajo derecha */
+.articulohaiku4 {
+    background-color: cadetblue;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 30px;
+    padding: 28px;
+    text-align: center;
+    color: azure;
+}
+
+/* HOME */
+/* TARJETAS DESTACADOS */
+/* Solapa "Destacado" arriba de cada tarjeta */
+.tarjeta .articlelabel {
+    color:cadetblue;
+    background-color: honeydew;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: aquamarine;
+    padding: 10px;
+    margin-bottom: 1px;
+    width: 70px;
+    padding: 5px;
+}
+
+/* DIV que engloba la imagen, titulo y texto de la tarjeta */
+.tarjeta div {
+    background-color: powderblue;
+    border-radius: 10px;
+    width: 300px;
+    padding: 5px;
+}
+
+/* Imagen del articulo destacado */
+.articleimg {
+    border-radius: 10px;
+}
+
+/* Titulo del articulo destacado */
+.tarjeta .articletitle {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:darkcyan;
+}
+
+/* Texto del articulo destacado */
+.tarjeta .articletext {
+    font-size: 12px;
+    font-weight: 500;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* HOME */
+/* SEPARADOR ANTES DE FOOTER */
+/* Contenedor de imagenes y texto del separador */
+.separador2 {
+    background-color:lemonchiffon;
+    padding: 50px;
+    margin: 0px;
+}
+
+/* Imagenes del separador antes del footer */
+.haikuimg {
+    border-radius: 40px;
+    opacity: 40%;
+    filter:grayscale(100%);
+    margin-right: 25%;
+    margin-top: 50px;
+}
+
+/* Texto del separador antes del footer */
+.haiku2 {
+    margin-top: 56px;
+    margin-bottom: 56px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* TODAS LAS PAGINAS */
+/* FOOTER */
+/* Footer general */
+footer {
+    background-color:cadetblue;
+    margin: 0px;
+}
+
+/* Eliminar puntos de las listas del footer */
+footer ul {
+    list-style-type: none;
+}
+
+/* Titulos de "Contacto" y "Seguinos", entre otros */
+.footertitle {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Iconos del footer */
+.footericons {
+    width: 32px;
+    height: 32px; 
+}
