@@ -98,6 +98,13 @@ footer {
 }
 
 /* Titulo de "Contacto" */
+.footer__links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 25%;
+}
 .footer__links a {
     color: blanchedalmond;
     margin-bottom: 20px;
@@ -111,14 +118,12 @@ footer {
     font-size: 18px;
     color: burlywood;
     margin-bottom: 40px;
-    
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
 
-
 /* Titulo de "Seguinos" */
+.footer__redes {
+    padding-left: 25%;
+}
 .footer__redes--titulo {
     font-weight: 600;
     font-size: 18px;
@@ -156,11 +161,13 @@ footer {
     text-shadow: 1px 1px 5px black;
 }
 
+
 /* HOME */
 /* SEPARADOR DEBAJO DEL BANNER */
 /* Contenedor de todo el separador */
 .separador_frase {
     background-color:lemonchiffon;
+    background-image: linear-gradient(blanchedalmond, lemonchiffon 40% 60%, blanchedalmond);
     min-height: 200px;
 
     display: flex;
@@ -223,8 +230,21 @@ footer {
     padding: 7%;
 }
 
+
 /* HOME */
 /* TARJETAS DESTACADOS */
+.contenedor_tarjeta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 1% 5% 1%;
+    background-color: blanchedalmond;
+}
+.tarjeta {
+    max-width: fit-content;
+    min-width: auto;
+}
+
 /* Solapa "Destacado" arriba de cada tarjeta */
 .tarjeta__label {
     color:cadetblue;
@@ -234,7 +254,8 @@ footer {
     border-color: aquamarine;
     padding: 10px;
     margin-bottom: 1px;
-    width: 70px;
+    max-width: fit-content;
+    min-width: auto;
     padding: 5px;
 }
 
@@ -242,8 +263,10 @@ footer {
 .tarjeta__contenido {
     background-color: powderblue;
     border-radius: 10px;
-    width: 300px;
-    padding: 5px;
+    padding: 3%;
+    width: fit-content;
+    min-width: auto;
+    min-height: 350px;
 }
 
 /* Imagen del articulo destacado */
@@ -256,18 +279,15 @@ footer {
     font-size: 18px;
     font-weight: 600;
     font-style: bold;
-    margin-top: 5px;
-    margin-bottom: 5px;
     color:darkcyan;
+    margin: 2% 0 2% 0;
 }
 
 /* Texto del articulo destacado */
 .tarjeta__contenido--texto {
     font-size: 12px;
     font-weight: 500;
-    width: 300px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    max-width: 300px;
 }
 
 
@@ -278,8 +298,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
-    padding: 7%;
+    padding: 7% 5% 5% 5%;
     background-color:lemonchiffon;
+    background-image: linear-gradient(blanchedalmond, lemonchiffon 10% 100%);
 }
 
 /* Contenedores de cada imagen y texto del separador */
