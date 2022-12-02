@@ -16,33 +16,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/style_general.css" />
+    <link rel="stylesheet" href="../styles/style_article.css" />
 </head>
 
 
 <body>
 
     <header>
-        <nav>
-            <h1 class="navtitle">
-                <a href="../index.html"><img src="https://picsum.photos/32/32" alt="Ir a inicio" /></a>
-                <a href="../index.html">VERANO FEEL</a>
-            </h1>
-            <ul>
-                <li>
-                    <a href="../index.html" class="linktext">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pags/galeria.html" class="linktext">Galeria</a>
-                </li>
-                <li>
-                    <a href="../pags/mapa.html" class="linktext">Mapa</a>
-                </li>
-                <li>
-                    <a href="../pags/contacto.html" class="linktext">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="encabezado">
+                <div class="navbar_title">
+                    <a href="../index.html"><img src="https://picsum.photos/32/32" alt="Ir a inicio" /></a>
+                    <a href="../index.html">Verano Feel</a>
+                </div>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="../index.html" >Inicio</a></li>
+                        <li><a href="../pags/galeria.html" >Galeria</a></li>
+                        <li><a href="../pags/mapa.html" >Mapa</a></li>
+                        <li><a href="../pags/contacto.html" >Contacto</a></li>
+                    </ul>
+                </nav>
+        </div>
     </header>
 
 
@@ -53,67 +48,44 @@
         </div>
 
         <h1 class="title">MAPA</h1>
-
-        <br />
-
         
         <section>
-            <h2 class="subtitle">Cabaña Rosita</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1576.8658734878095!2d-57.451346085823495!3d-37.77288767961673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584cd82dc654cfd%3A0x8fa9fc7819478c58!2sCaba%C3%B1as%20Abumimi!5e0!3m2!1ses!2sar!4v1667866463577!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <br />
-            <br />
-
-            <h2 class="subtitle">Rancho Kika</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.655673460206!2d-57.45460392780701!3d-37.774671145166955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584cd83f70ce50d%3A0x5907245a2c585a97!2sThe%20Ranch!5e0!3m2!1ses!2sar!4v1667866574175!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2 class="subtitle">Alquileres disponibles</h2>
+            <iframe class="mapagrande" src="https://www.google.com/maps/d/u/0/embed?mid=1c1E6gTBO4-HusdWtMJofDJE7DTTh5R0&ehbc=2E312F" ></iframe>
         </section>
         
     </main>
 
-    <br />
-    <br />
-
     <footer>
-        <h5 class="footertitle">Contacto</h5>
-        <ul>
-            <li>
-                <a href="" class="linktext">
-                    <p>+54 11 6 XXX XXXX</p>
+        <section class="pie">
+        <div class="footer__links">
+                <h5 class="footer__links--titulo">Contacto</h5>
+                <a href="">
                     <img class="footericons" src="../imgs/icons8-whatsapp-64.png" alt="Whatsapp" />
+                    <p>+54 11 6 XXX XXXX</p>
                 </a>
-            </li>
-            <li>
-                <a href="" class="linktext">
-                    <p>veranofeel@veranofeel.com.ar</p>
+                <a href="">
                     <img class="footericons" src="../imgs/icons8-secured-letter-64.png" alt="Email" />
+                    <p>veranofeel@veranofeel.com.ar</p>
                 </a>
-            </li>
-        </ul>
+        </div>
 
-        <h5 class="footertitle">Seguinos!</h5>
-        <ul>
-            <li>
+        <div class="footer__redes">
+                <h5 class="footer__redes--titulo">Seguinos!</h5>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-instagram-64.png" alt="Instagram" />
                 </a>
-            </li>
-            <li>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-facebook-64.png" alt="Facebook" />
                 </a>
-            </li>
-            <li>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-twitter-squared-64.png" alt="Twitter" />
                 </a>
-            </li>
-            <li>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-youtube-64.png" alt="Youtube" />
                 </a>
-            </li>
-        </ul>
-                    
+        </div>
+        </section>  
     </footer>
     
 </body>

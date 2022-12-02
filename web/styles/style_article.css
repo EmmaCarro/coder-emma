@@ -1,116 +1,219 @@
-/*  */
-/* GENERAL */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* Tipografia general */
-body {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    background-color: blanchedalmond;
-
-    /* Sacarle el subrayado a los links */
-    text-decoration: none;
-}
-
-/* TODAS LAS PAGINAS */
-/* BARRA DE NAVEGACION */
-/* Header entero */
-header {
-    background-color: cadetblue;
-}
-
-/* Barra de navegacion de la pagina */
-.navbar {
-    text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    margin: 0px;
-}
-
-/* Titulo de la pagina */
-.navbar__navtitle {
-    text-decoration: none;
-    font-family: 'Caveat', italic;
-    color: burlywood;
-    font-weight: 600;
-    font-size: 26px;
-    margin: 0px;
-}
-
-/* Sin puntos en la lista de la barra de navegacion */
-.navbar__navlinks {
-    list-style-type: none;
-}
-
-/* Icono o logo al lado de titulo de pagina */
-.navbar__navtitle-logoimg {
-    border-radius: 20px;
-    margin: 10px;
-    padding-right: 10px;
-}
-
-/* TODAS LAS PAGINAS */
-/* FOOTER */
-/* Footer general */
-footer {
-    background-color:cadetblue;
-    margin: 0px;
-}
-
-/* Titulo de "Contacto" */
-.footer__links--titulo {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-/* Titulo de "Seguinos" */
-.footer__redes--titulo {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-/* Iconos del footer */
-.footericons {
-    width: 32px;
-    height: 32px; 
-}
-
-
 /* TODAS LAS PAGINAS EXCEPTO HOME */
 /* Navegacion o breadcrumbs */
 .breadcrumbs {
-
-}
-
-/* Titulo */
-.title {
-
-}
-
-/* Subtitulo */
-.subtitle {
-
+    margin: 1% auto 1% 0;
 }
 
 
 /* PAGINAS DE ARTICULOS */
-/* Tabla de estadisticas */
-.tabla_estadisticas {
-
+/* Titulo */
+.title {
+    color: darkcyan;
+    margin: 5% auto 1% auto;
+    text-align: center;
 }
 
-/* Mapa debajo de estadisticas */
-.mapa {
-
-}
-
-/* Galeria de imagenes del articulo */
-.listado_imagenes {
-
+/* Subtitulo */
+.subtitle {
+    color: darkcyan;
+    margin: 1% auto 5% auto;
+    text-align: center;
 }
 
 
+/* GALERIA - VIDEOS */
+/* Tarjetas de videos */
+.contenedor_tarjetav {
+    padding: 5% 1% 5% 1%;
+    background-color: blanchedalmond;
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 3%;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+.tarjetav {
+    width: fit-content;
+    min-width: auto;
+}
+
+/* DIV que engloba la imagen, titulo y texto de la tarjeta */
+.tarjetav__contenido {
+    background-color: powderblue;
+    border-radius: 10px;
+    padding: 3%;
+    min-height: 610px;
+    max-width: 500px;
+    box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen del articulo destacado */
+.tarjetav__contenido--video {
+    border-radius: 10px;
+    min-width: fit-content;
+    min-height: 300px;
+    margin: 3% 0 3% 0;
+}
+
+/* Titulo del articulo destacado */
+.tarjetav__contenido--titulo {
+    font-size: 22px;
+    font-weight: 600;
+    font-style: bold;
+    color:darkcyan;
+    margin: 2% 0 4% 0;
+    text-align: center;
+}
+
+/* Texto del articulo destacado */
+.tarjetav__contenido--texto {
+    font-size: 12px;
+    font-weight: 500;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+/* Boton link de cada tarjeta */
+.tarjetav__contenido--boton {
+    color: slategrey;
+    background-color: azure;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    padding: 5px;
+
+    max-width: fit-content;
+    min-width: auto;
+
+    margin: auto 1% 0 auto;
+}
+
+/* Tabla de estadisticas arriba del video */
+.tarjetav__table {
+    border: 0px;
+    font-size: 11px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(36,11,111,0) 0%, paleturquoise 5% 95%, rgba(0,0,0,0) 100%);
+}
+
+/* Tabla de estadisticas arriba de mapa e imagenes */
+.tarjetav__tablelarge {
+    border: 0px;
+    font-size: 16px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(36,11,111,0) 0%, lemonchiffon 5% 95%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    margin: 4% auto auto auto;
+}
+
+
+/* GALERIA - IMAGENES */
+/* Seccion contenedora de imagenes */
+.contenedor_imagenes {
+    padding: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 5%;
+    justify-items: center;
+    align-items: center;
+    min-height: auto;
+    overflow: auto;
+    margin: 2% 0 5% 0;
+}
+
+/* Imagenes del contenedor de imagenes */
+.contenedor_imagenes--img {
+    overflow: auto;
+    border-radius: 5%;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_imagenes--img img{
+    min-width: 370px;
+    min-height: 495px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Mapa de la seccion galeria imagenes */
+.mapachico {
+    min-width: 100%;
+    min-height: 300px;
+}
+
+
+/* SECCION MAPA */
+/* Mapa de la seccion Mapa */
+.mapagrande {
+    min-width: 100%;
+    min-height: 600px;
+    margin-bottom: 5%;
+}
+
+/* SECCION CONTACTO */
+form {
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+fieldset {
+    min-width: 600px;
+    display: block;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid gray;
+    background-color: rgba(255, 250, 205, 0.5);
+  }
+
+  fieldset div {
+    margin-bottom: 2%;
+  }
+
+  legend {
+    background-color: lemonchiffon;
+    color: gray;
+    padding: 5px;
+    border-radius: 3%;
+    border: 1px solid gray;
+  }
+
+  input {
+    display: inline-block;
+    margin: 1%;
+  }
+
+  fieldset label {
+    display: inline-block;
+    margin: 1%;
+  }
+
+  fieldset select {
+    display: inline-block;
+  }
+
+  fieldset button {
+    color: slategrey;
+    background-color: azure;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    padding: 5px;
+
+    max-width: fit-content;
+
+    margin: 2%;
+  }

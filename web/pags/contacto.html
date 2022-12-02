@@ -17,33 +17,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/style_general.css" />
+    <link rel="stylesheet" href="../styles/style_article.css" />
 </head>
 
 
 <body>
 
     <header>
-        <nav>
-            <h1 class="navtitle">
-                <a href="../index.html"><img src="https://picsum.photos/32/32" alt="Ir a inicio" /></a>
-                <a href="../index.html">VERANO FEEL</a>
-            </h1>
-            <ul>
-                <li>
-                    <a href="../index.html" class="linktext">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pags/galeria.html" class="linktext">Galeria</a>
-                </li>
-                <li>
-                    <a href="../pags/mapa.html" class="linktext">Mapa</a>
-                </li>
-                <li>
-                    <a href="../pags/contacto.html" class="linktext">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="encabezado">
+                <div class="navbar_title">
+                    <a href="../index.html"><img src="https://picsum.photos/32/32" alt="Ir a inicio" /></a>
+                    <a href="../index.html">Verano Feel</a>
+                </div>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="../index.html" >Inicio</a></li>
+                        <li><a href="../pags/galeria.html" >Galeria</a></li>
+                        <li><a href="../pags/mapa.html" >Mapa</a></li>
+                        <li><a href="../pags/contacto.html" >Contacto</a></li>
+                    </ul>
+                </nav>
+        </div>
     </header>
 
 
@@ -55,122 +50,99 @@
 
 
         <section>
-            <h1 class="title">Contacto</h1>
+            <h1 class="title">CONTACTO</h1>
 
-            <h2 class="subtitle">Envianos un mensaje y te respondemos a la brevedad</h2>
-            <br />
+            <h2 class="subtitle">¡Envianos un mensaje y te respondemos a la brevedad!</h2>
 
             <form>
                 <fieldset>
-                <legend>Datos de contacto</legend>
+                    <legend>Datos de contacto</legend>
 
-                <br />
-                <br />
+                    <div>
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" name="nombre" placeholder="Nombres" />
+                        <input type="text" name="nombre" placeholder="Apellidos" />
+                    </div>
 
-                <label for="nombre">Nombre y apellido</label>
-                <input type="text" name="nombre" placeholder="Nombres" />
-                <input type="text" name="nombre" placeholder="Apellidos" />
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" placeholder="Email" />
 
-                <br />
-                <br />
+                        <label for="numero">Teléfono</label>
+                        <input type="number" name="numero" placeholder="Numero" />
+                    </div>
 
-                <label for="email">Email</label>
-                <input type="text" name="email" placeholder="Email" />
+                    <div>
+                        <label for="tipo">Alquiler de su interes:</label>
+                        <select name="tipo">
+                            <option value="casa">Casa</option>
+                            <option value="ph">PH</option>
+                            <option value="duplex">Dúplex</option>
+                            <option value="depto">Departamento</option>
+                        </select>
+                    </div>
 
-                <br />
-                <br />
+                    <div>
+                        <label for="fecha">Fecha de interes:</label>
+                        <label>desde</label>
+                        <input type="date" name="fecha" />
+                        <label>hasta</label>
+                        <input type="date" name="fecha" placeholder="Hasta" />
+                    </div>
 
-                <label for="numero">Teléfono</label>
-                <input type="number" name="numero" placeholder="Numero" />
+                    <div>
+                        <label for="personas">Cantidad de personas:</label>
+                        <input type="checkbox" name="personas" id="1personas" />  <label for="1personas">1</label>
+                        <input type="checkbox" name="personas" id="2personas" />  <label for="2personas">2</label>
+                        <input type="checkbox" name="personas" id="3personas" />  <label for="3personas">3</label>
+                        <input type="checkbox" name="personas" id="4personas" />  <label for="4personas">4</label>
+                        <input type="checkbox" name="personas" id="5personas" />  <label for="5personas">5 o más</label>
+                    </div>
 
-                <br />
-                <br />
+                    <div>
+                        <label for="personas">¿Lleva mascotas?</label>
+                        <input type="radio" name="mascotas" id="simascota" /><label for="simascota">Si</label>
+                        <input type="radio" name="mascotas" id="nomascota" /><label for="nomascota">No</label>
+                    </div>
+                    
+                    <button type="reset">Limpiar formulario</button>
+                    <button type="submit">Enviar</button>
 
-                <div>Alquiler de su interes:</div>
-                <select name="tipo">
-                  <option value="casa">Casa</option>
-                  <option value="ph">PH</option>
-                  <option value="duplex">Dúplex</option>
-                  <option value="depto">Departamento</option>
-                </select>
-                
-                <br />
-                <br />
-
-                <label for="fecha">Fecha de interes:</label>
-                <div>desde</div><input type="date" name="fecha" />
-                <div>hasta</div><input type="date" name="fecha" placeholder="Hasta" />
-
-                <br />
-                <br />
-
-                <div>Cantidad de personas:</div>
-
-                <input type="checkbox" name="personas" id="1personas" />  <label for="1personas">1</label>
-                <input type="checkbox" name="personas" id="2personas" />  <label for="2personas">2</label>
-                <input type="checkbox" name="personas" id="3personas" />  <label for="3personas">3</label>
-                <input type="checkbox" name="personas" id="4personas" />  <label for="4personas">4</label>
-                <input type="checkbox" name="personas" id="5personas" />  <label for="5personas">5 o más</label>
-
-                <br />
-                <br />
-
-                <div>¿Lleva mascotas?</div>
-                    <input type="radio" name="mascotas" id="simascota" /><label for="simascota">Si</label>
-                    <input type="radio" name="mascotas" id="nomascota" /><label for="nomascota">No</label>
-
-                <br />
-                <br />
-                
-                <button type="reset">Limpiar formulario</button>
-                <button type="submit">Enviar</button>
-
-            </fieldset>
+                </fieldset>
             </form>
         </section>
     </main>
 
     <footer>
-        <h5 class="footertitle">Contacto</h5>
-        <ul>
-            <li>
-                <a href="" class="linktext">
-                    <p>+54 11 6 XXX XXXX</p>
+        <section class="pie">
+        <div class="footer__links">
+                <h5 class="footer__links--titulo">Contacto</h5>
+                <a href="">
                     <img class="footericons" src="../imgs/icons8-whatsapp-64.png" alt="Whatsapp" />
+                    <p>+54 11 6 XXX XXXX</p>
                 </a>
-            </li>
-            <li>
-                <a href="" class="linktext">
-                    <p>veranofeel@veranofeel.com.ar</p>
+                <a href="">
                     <img class="footericons" src="../imgs/icons8-secured-letter-64.png" alt="Email" />
+                    <p>veranofeel@veranofeel.com.ar</p>
                 </a>
-            </li>
-        </ul>
+        </div>
 
-        <h5 class="footertitle">Seguinos!</h5>
-        <ul>
-            <li>
+        <div class="footer__redes">
+                <h5 class="footer__redes--titulo">Seguinos!</h5>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-instagram-64.png" alt="Instagram" />
                 </a>
-            </li>
-            <li>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-facebook-64.png" alt="Facebook" />
                 </a>
-            </li>
-            <li>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-twitter-squared-64.png" alt="Twitter" />
                 </a>
-            </li>
-            <li>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-youtube-64.png" alt="Youtube" />
                 </a>
-            </li>
-        </ul>
-               
+        </div>
+        </section>  
     </footer>
 
        

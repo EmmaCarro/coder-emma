@@ -1,0 +1,137 @@
+/*  */
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Sacarle el subrayado a los links */
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* Tipografia general */
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-color: blanchedalmond;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* TODAS LAS PAGINAS */
+/* BARRA DE NAVEGACION */
+/* Header entero */
+header {
+    background-color: cadetblue;
+    padding: 20px 10px;
+}
+
+/* Contenedor de la barra de navegacion */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Titulo de la pagina */
+.navbar_title {
+    text-decoration: none;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0 auto 0 10px;
+}
+.navbar_title a {
+    font-family: 'Caveat', italic;
+    color: burlywood;
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0 5px;
+}
+
+/* Lista de la barra de navegacion. Los links */
+.navbar {
+    /* Sin puntos en la lista de la barra de navegacion */
+    list-style-type: none;
+
+    display: flex;
+    margin: 0 10px 0 auto;
+}
+
+/* Icono o logo al lado de titulo de pagina */
+.navbar_title img {
+    display: flex;
+    justify-content: center;
+
+    border-radius: 50%;
+    padding-right: 5px;
+}
+
+/* Links de la navbar */
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {    
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: blanchedalmond;
+}
+
+
+/* TODAS LAS PAGINAS */
+/* FOOTER */
+/* Footer general */
+footer {
+    background-color:cadetblue;
+}
+.pie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5%;
+}
+
+/* Titulo de "Contacto" */
+.footer__links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 25%;
+}
+.footer__links a {
+    color: blanchedalmond;
+    margin-bottom: 20px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer__links--titulo {
+    font-weight: 600;
+    font-size: 18px;
+    color: burlywood;
+    margin-bottom: 40px;
+}
+
+/* Titulo de "Seguinos" */
+.footer__redes {
+    padding-left: 25%;
+}
+.footer__redes--titulo {
+    font-weight: 600;
+    font-size: 18px;
+    color: burlywood;
+    margin-bottom: 40px;
+}
+
+/* Iconos del footer */
+.footericons {
+    width: 28px;
+    height: 28px; 
+    margin-right: 10px;
+}
