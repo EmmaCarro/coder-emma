@@ -3,21 +3,25 @@
 .hero {
     font-weight: 300;
     font-size: 28px;
-    background-image: url("https://picsum.photos/1024/300");
-    background-repeat: no-repeat;
-	background-position: center;
+    background: url(../imgs/herobanner.jpg) no-repeat;
 	background-size: cover;
-	background-attachment: scroll;
-	min-height: 300px;
-    max-height: 350px;
+	min-height: 350px;
+    max-height: 400px;
     color: white;
     margin: 0 0 0 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
-    text-shadow: 1px 1px 5px black;
+}
+
+.hero_titulo {
+    text-shadow: 1px 1px 10px aquamarine;
+}
+.hero_subtitulo {
+    text-shadow: 0px 0px 5px black;
 }
 
 
@@ -124,7 +128,7 @@
     padding: 3%;
     width: fit-content;
     min-width: auto;
-    min-height: 400px;
+    min-height: 410px;
     box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
 
     display: flex;
@@ -132,8 +136,25 @@
 }
 
 /* Imagen del articulo destacado */
-.tarjeta__contenido--imagen {
+.tarjeta__contenido--imagen1 {
+    background-image: url(../imgs/kika/1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
     border-radius: 10px;
+    min-width: 300px;
+    min-height: 200px;
+    color: transparent;
+}
+.tarjeta__contenido--imagen2 {
+    background-image: url(../imgs/rosita/8.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 200px;
+    color: transparent;
 }
 
 /* Titulo del articulo destacado */
@@ -158,7 +179,7 @@
 .tarjeta__contenido--boton {
     color: slategrey;
     background-color: azure;
-    border: 1px solid darkcyan;
+    border: 1px solid transparent;
     border-radius: 10px;
     padding: 5px;
 
@@ -203,4 +224,34 @@
     font-size: 18px;
     text-align: center;
     margin-top: 5%;
+}
+
+
+
+/* ANIMACIONES */
+/* Boton de la tarjeta */
+.tarjeta__contenido--boton {
+    transition: all 0.2s ease;
+}
+.tarjeta__contenido--boton:hover {
+    border: 1px solid darkcyan;
+    background-color: lemonchiffon;
+    transition: all 0.2s ease;
+}
+.tarjeta__contenido--boton:active {
+    border: 1px solid aquamarine;
+    background-color: white;
+    color: aquamarine;
+    transition: all 0.2s ease;
+}
+
+
+/* HERO */
+.hero {
+    animation: animacionflow 30s ease infinite;
+}
+@keyframes animacionflow {
+  0%   { background-position: 0% 30%, 0 0;}
+  50%  { background-position: 100% 70%, 0 0;}
+  100% { background-position: 0% 30%, 0 0;}
 }

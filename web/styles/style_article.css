@@ -2,6 +2,10 @@
 /* Navegacion o breadcrumbs */
 .breadcrumbs {
     margin: 1% auto 1% 0;
+    color: grey;
+}
+.breadcrumbs a {
+    color: darkcyan;
 }
 
 
@@ -15,7 +19,7 @@
 
 /* Subtitulo */
 .subtitle {
-    color: darkcyan;
+    color: darkseagreen;
     margin: 1% auto 5% auto;
     text-align: center;
 }
@@ -177,6 +181,7 @@ fieldset {
     margin: 1%;
     padding: 1%;
     border: 1px solid gray;
+    border-radius: 10px;
     background-color: rgba(255, 250, 205, 0.5);
   }
 
@@ -190,11 +195,15 @@ fieldset {
     padding: 5px;
     border-radius: 3%;
     border: 1px solid gray;
+    border-radius: 10px;
   }
 
   input {
     display: inline-block;
     margin: 1%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 1%;
   }
 
   fieldset label {
@@ -204,6 +213,10 @@ fieldset {
 
   fieldset select {
     display: inline-block;
+    margin: 1%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 1%;
   }
 
   fieldset button {
@@ -217,3 +230,64 @@ fieldset {
 
     margin: 2%;
   }
+
+
+
+
+  
+/* ANIMACIONES */
+/* Boton de la tarjeta */
+.tarjetav__contenido--boton {
+    transition: all 0.2s ease;
+}
+.tarjetav__contenido--boton:hover {
+    border: 1px solid darkcyan;
+    background-color: lemonchiffon;
+    transition: all 0.2s ease;
+}
+.tarjetav__contenido--boton:active {
+    border: 1px solid aquamarine;
+    background-color: white;
+    color: aquamarine;
+    transition: all 0.2s ease;
+}
+
+/* Breadcrumbs links */
+.breadcrumbs a {
+    border-radius: 15%;
+    background-color: transparent;
+}
+.breadcrumbs a:hover {
+    border-radius: 15%;
+    background-color: lemonchiffon;
+    color: darkcyan;
+    transition: all 0.2s ease;
+}
+
+/* Boton de formulario contacto */
+fieldset button {
+    transition: all 0.2s ease;
+}
+fieldset button:hover {
+    border: 1px solid darkcyan;
+    background-color: lemonchiffon;
+    transition: all 0.2s ease;
+}
+fieldset button:active {
+    border: 1px solid aquamarine;
+    background-color: white;
+    color: aquamarine;
+    transition: all 0.2s ease;
+}
+
+/* Espacios a rellenar de formulario contacto */
+input:focus {
+    outline: none;
+    border: 1px solid aquamarine;
+    transition: all 1s;
+}
+select:focus {
+    outline: none;
+    border: 1px solid aquamarine;
+    transition: all 1s;
+}
