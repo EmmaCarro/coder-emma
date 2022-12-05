@@ -1,172 +1,44 @@
-/*  */
-/* GENERAL */
-* {
-    margin: 0;
-    padding: 0;
-
-    /* Sacarle el subrayado a los links */
-    text-decoration: none;
-}
-
-/* Tipografia general */
-body {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    background-color: blanchedalmond;
-}
-
-/* TODAS LAS PAGINAS */
-/* BARRA DE NAVEGACION */
-/* Header entero */
-header {
-    background-color: cadetblue;
-    padding: 10px;
-}
-
-/* Barra de navegacion de la pagina */
-header {
-    padding: 20px 10px;
-}
-
-/* Contenedor de la barra de navegacion */
-.encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-/* Titulo de la pagina */
-.navbar_title {
-    text-decoration: none;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    margin: 0 auto 0 10px;
-}
-.navbar_title a {
-    font-family: 'Caveat', italic;
-    color: burlywood;
-    font-weight: 600;
-    font-size: 26px;
-    margin: 0 5px;
-}
-
-/* Lista de la barra de navegacion. Los links */
-.navbar {
-    /* Sin puntos en la lista de la barra de navegacion */
-    list-style-type: none;
-
-    display: flex;
-    margin: 0 10px 0 auto;
-}
-
-/* Icono o logo al lado de titulo de pagina */
-.navbar_title img {
-    display: flex;
-    justify-content: center;
-
-    border-radius: 50%;
-    padding-right: 5px;
-}
-
-/* Links de la navbar */
-.navbar li {
-    margin: 0 15px;
-}
-.navbar a {    
-    text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    color: blanchedalmond;
-}
-
-
-/* TODAS LAS PAGINAS */
-/* FOOTER */
-/* Footer general */
-footer {
-    background-color:cadetblue;
-}
-.pie {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 5%;
-}
-
-/* Titulo de "Contacto" */
-.footer__links a {
-    color: blanchedalmond;
-    margin-bottom: 20px;
-    
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.footer__links--titulo {
-    font-weight: 600;
-    font-size: 18px;
-    color: burlywood;
-    margin-bottom: 40px;
-    
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-/* Titulo de "Seguinos" */
-.footer__redes--titulo {
-    font-weight: 600;
-    font-size: 18px;
-    color: burlywood;
-    margin-bottom: 40px;
-}
-
-/* Iconos del footer */
-.footericons {
-    width: 28px;
-    height: 28px; 
-    margin-right: 10px;
-}
-
-
 /* HOME */
 /* BANNER */
 .hero {
     font-weight: 300;
     font-size: 28px;
-    background-image: url("https://picsum.photos/1024/300");
-    background-repeat: no-repeat;
-	background-position: center;
+    background: url(../imgs/herobanner.jpg) no-repeat;
 	background-size: cover;
-	background-attachment: scroll;
-	min-height: 300px;
-    max-height: 350px;
+	min-height: 350px;
+    max-height: 400px;
     color: white;
     margin: 0 0 0 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
-    text-shadow: 1px 1px 5px black;
 }
+
+.hero_titulo {
+    text-shadow: 1px 1px 10px aquamarine;
+}
+.hero_subtitulo {
+    text-shadow: 0px 0px 5px black;
+}
+
 
 /* HOME */
 /* SEPARADOR DEBAJO DEL BANNER */
 /* Contenedor de todo el separador */
 .separador_frase {
     background-color:lemonchiffon;
+    background-image: radial-gradient(lemonchiffon, blanchedalmond 60% 80%);
     min-height: 200px;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 30% 0 30%;
+    padding: 0 20% 0 20%;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 /* Texto del separador */
@@ -223,8 +95,21 @@ footer {
     padding: 7%;
 }
 
+
 /* HOME */
 /* TARJETAS DESTACADOS */
+.contenedor_tarjeta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5% 1% 5% 1%;
+    background-color: blanchedalmond;
+}
+.tarjeta {
+    max-width: fit-content;
+    min-width: auto;
+}
+
 /* Solapa "Destacado" arriba de cada tarjeta */
 .tarjeta__label {
     color:cadetblue;
@@ -232,9 +117,9 @@ footer {
     border: solid 2px;
     border-radius: 10px;
     border-color: aquamarine;
-    padding: 10px;
     margin-bottom: 1px;
-    width: 70px;
+    max-width: fit-content;
+    min-width: auto;
     padding: 5px;
 }
 
@@ -242,13 +127,36 @@ footer {
 .tarjeta__contenido {
     background-color: powderblue;
     border-radius: 10px;
-    width: 300px;
-    padding: 5px;
+    padding: 3%;
+    width: fit-content;
+    min-width: auto;
+    min-height: 410px;
+    box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* Imagen del articulo destacado */
-.tarjeta__contenido--imagen {
+.tarjeta__contenido--imagen1 {
+    background-image: url(../imgs/kika/1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
     border-radius: 10px;
+    min-width: 300px;
+    min-height: 200px;
+    color: transparent;
+}
+.tarjeta__contenido--imagen2 {
+    background-image: url(../imgs/rosita/8.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 200px;
+    color: transparent;
 }
 
 /* Titulo del articulo destacado */
@@ -256,18 +164,31 @@ footer {
     font-size: 18px;
     font-weight: 600;
     font-style: bold;
-    margin-top: 5px;
-    margin-bottom: 5px;
     color:darkcyan;
+    margin: 2% 0 2% 0;
 }
 
 /* Texto del articulo destacado */
 .tarjeta__contenido--texto {
     font-size: 12px;
     font-weight: 500;
-    width: 300px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    max-width: 300px;
+
+    margin-bottom: 5%;
+}
+
+/* Boton VER de la tarjeta */
+.tarjeta__contenido--boton {
+    color: slategrey;
+    background-color: azure;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+
+    max-width: fit-content;
+    min-width: auto;
+
+    margin: auto 1% 1% auto;
 }
 
 
@@ -278,8 +199,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
-    padding: 7%;
+    padding: 10% 5% 7% 5%;
     background-color:lemonchiffon;
+    background-image: linear-gradient(blanchedalmond, lemonchiffon 20% 100%);
 }
 
 /* Contenedores de cada imagen y texto del separador */
@@ -304,4 +226,79 @@ footer {
     font-size: 18px;
     text-align: center;
     margin-top: 5%;
+}
+
+
+
+/* ANIMACIONES */
+/* Boton de la tarjeta */
+.tarjeta__contenido--boton {
+    transition: all 0.2s ease;
+}
+.tarjeta__contenido--boton:hover {
+    border: 1px solid darkcyan;
+    background-color: lemonchiffon;
+    transition: all 0.2s ease;
+}
+.tarjeta__contenido--boton:active {
+    border: 1px solid aquamarine;
+    background-color: white;
+    color: aquamarine;
+    transition: all 0.2s ease;
+}
+
+
+/* HERO */
+.hero {
+    animation: animacionflow 30s ease infinite;
+}
+@keyframes animacionflow {
+  0%   { background-position: 0% 30%, 0 0;}
+  50%  { background-position: 100% 70%, 0 0;}
+  100% { background-position: 0% 30%, 0 0;}
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 810px) {
+    .contenedor_tarjeta {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        margin-bottom: 5%;
+    }
+
+    .separador_cubos__titulo {
+        font-size: 28px;
+    }
+
+    .separador_cubos__texto {
+        font-size: 16px;
+    }
+
+    .separador_frase-frase {
+        white-space: nowrap;
+    }
+
+    .separador_frase-linea {
+        display: none;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    .hero_subtitulo {
+        font-size: 22px;
+    }
+    
+    .separador_cubos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    }
 }

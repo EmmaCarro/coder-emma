@@ -16,179 +16,154 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/style_general.css" />
+    <link rel="stylesheet" href="../styles/style_article.css" />
 </head>
 
 
 <body>
     
     <header>
-        <nav>
-            <h1 class="navtitle">
-                <a href="../index.html"><img src="https://picsum.photos/32/32" alt="Ir a inicio" /></a>
-                <a href="../index.html">VERANO FEEL</a>
-            </h1>
-            <ul>
-                <li>
-                    <a href="../index.html" class="linktext">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pags/galeria.html" class="linktext">Galeria</a>
-                </li>
-                <li>
-                    <a href="../pags/mapa.html" class="linktext">Mapa</a>
-                </li>
-                <li>
-                    <a href="../pags/contacto.html" class="linktext">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="encabezado">
+                <div class="navbar_title">
+                    <a href="../index.html"><img src="../imgs/logo1.jpg" alt="Ir a inicio" /></a>
+                    <a href="../index.html">Verano Feel</a>
+                </div>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="../index.html" >Inicio</a></li>
+                        <li><a href="../pags/galeria.html" >Galeria</a></li>
+                        <li><a href="../pags/mapa.html" >Mapa</a></li>
+                        <li><a href="../pags/contacto.html" >Contacto</a></li>
+                    </ul>
+                    <div class="hamburgesa">
+                        <span class="hamburgesa_linea"></span>
+                        <span class="hamburgesa_linea"></span>
+                        <span class="hamburgesa_linea"></span>
+                    </div>
+                </nav>
+        </div>
     </header>
 
     <main>
-        
         <div class="breadcrumbs">
             <p><a href="../index.html">Inicio</a> > Galeria</p>
         </div>
-
         <h1 class="title">GALERIA</h1>
 
-        <br />
-
-        <section>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3qj5mhDvSqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div>
-                <h2 class="articlelabel">Rancho Kika</h2>
-                <table border=0>
-                    <thead>
-                        <tr>
-                            <th>Antigüedad</th>
-                            <th>Ambientes</th>
-                            <th>Cubiertos (m2)</th>
-                            <th>Libres (m2)</th>
-                            <th>Baños</th>
-                            <th>Dormitorios</th>
-                            <th>Cochera</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>16</td>
-                            <td>5</td>
-                            <td>88</td>
-                            <td>67</td>
-                            <td>2</td>
-                            <td>2</td>
-                            <td>Si</td>
-                        </tr>
-                </table>
-            </div>
-            <p>
-                Kika ofrece habitaciones con aire acondicionado y wifi gratis.
-                Los huéspedes pueden disfrutar del restaurante del hotel.
-                Aparcamiento privado gratuito disponible en el sitio.
-                Algunas unidades tienen vistas a la piscina o al jardín.
-                Cada habitación está equipada con un cuarto de baño privado equipado con bañera o ducha y bidé.
-                Para su comodidad, encontrará artículos de aseo gratuitos y secador de pelo.
-                Hay TV de pantalla plana disponible.
-                Hay un salón compartido en la propiedad.
-                En el albergue se puede jugar al ping pong.
-            </p>
-            <button class="botonlink">
-                <a href="../pags/artics/00ranchokika.html">VER</a>
-            </button>
-        </section>
-
-        <br />
-        <br />
-        <br />
         
-        <section>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BwRDI85TE8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div>
-                <h2 class="articlelabel">Cabaña Rosita</h2>
-                <table border=0>
-                    <thead>
-                        <tr>
-                            <th>Antigüedad</th>
-                            <th>Ambientes</th>
-                            <th>Cubiertos (m2)</th>
-                            <th>Libres (m2)</th>
-                            <th>Baños</th>
-                            <th>Dormitorios</th>
-                            <th>Cochera</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>25</td>
-                            <td>4</td>
-                            <td>94</td>
-                            <td>78</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>No</td>
-                        </tr>
-                </table>
+        <section>   
+            <div class="contenedor_tarjetav">
+                <article class="tarjetav">
+                    <div class="tarjetav__contenido">
+                        <h2 class="tarjetav__contenido--titulo">RANCHO KIKA</h2>
+                        <table class="tarjetav__table">
+                            <thead>
+                                <tr>
+                                    <th>Antigüedad</th>
+                                    <th>Ambientes</th>
+                                    <th>Cubiertos (m2)</th>
+                                    <th>Libres (m2)</th>
+                                    <th>Baños</th>
+                                    <th>Dormitorios</th>
+                                    <th>Cochera</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>16</td>
+                                    <td>5</td>
+                                    <td>88</td>
+                                    <td>67</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>Si</td>
+                                </tr>
+                        </table>
+                        <iframe class="tarjetav__contenido--video" src="https://www.youtube.com/embed/3qj5mhDvSqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="tarjetav__contenido--texto">Kika ofrece habitaciones con aire acondicionado y wifi gratis.
+                            Los huéspedes pueden disfrutar del restaurante del hotel.
+                            Aparcamiento privado gratuito disponible en el sitio.
+                            Algunas unidades tienen vistas a la piscina o al jardín.
+                            Cada habitación está equipada con un cuarto de baño privado equipado con bañera o ducha y bidé.
+                            Para su comodidad, encontrará artículos de aseo gratuitos y secador de pelo.
+                            Hay TV de pantalla plana disponible.
+                            Hay un salón compartido en la propiedad.
+                            En el albergue se puede jugar al ping pong.
+                        </p>
+                        <a class="tarjetav__contenido--boton" href="../pags/artics/00ranchokika.html">Ver galeria</a>
+                    </div>
+                </article>
+                <article class="tarjetav">
+                    <div class="tarjetav__contenido">
+                        <h2 class="tarjetav__contenido--titulo">Cabaña Rosita</h2>
+                        <table class="tarjetav__table">
+                            <thead>
+                                <tr>
+                                    <th>Antigüedad</th>
+                                    <th>Ambientes</th>
+                                    <th>Cubiertos (m2)</th>
+                                    <th>Libres (m2)</th>
+                                    <th>Baños</th>
+                                    <th>Dormitorios</th>
+                                    <th>Cochera</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>25</td>
+                                    <td>4</td>
+                                    <td>94</td>
+                                    <td>78</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>No</td>
+                                </tr>
+                        </table>
+                        <iframe class="tarjetav__contenido--video" src="https://www.youtube.com/embed/BwRDI85TE8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="tarjetav__contenido--texto">La Cabaña Rosita, cuentan con jardín, piscina al aire libre y piscina al aire libre de temporada. 
+                            Hay conexión WiFi gratuita en todo el establecimiento y aparcamiento privado gratuito disponible en el establecimiento.
+                            Todas las unidades tienen un comedor y una sala de estar con TV de pantalla plana.
+                            También hay una cocina, equipada con horno, microondas y tostadora.
+                            Hay un baño privado con bañera o ducha y bidé en cada unidad. Hay toallas y ropa de cama disponibles.
+                            Cabaña Rosita también incluye un solárium.
+                        </p>
+                        <a class="tarjetav__contenido--boton" href="../pags/artics/01cabanarosita.html">Ver galeria</a>
+                    </div>
+                </article>
             </div>
-            <p>
-                La Cabaña Rosita, cuentan con jardín, piscina al aire libre y piscina al aire libre de temporada. 
-                Hay conexión WiFi gratuita en todo el establecimiento y aparcamiento privado gratuito disponible en el establecimiento.
-                Todas las unidades tienen un comedor y una sala de estar con TV de pantalla plana.
-                También hay una cocina, equipada con horno, microondas y tostadora.
-                Hay un baño privado con bañera o ducha y bidé en cada unidad. Hay toallas y ropa de cama disponibles.
-                Cabaña Rosita también incluye un solárium.
-            </p>
-            <button class="botonlink">
-                <a href="../pags/artics/01cabanarosita.html">VER</a>
-            </button>
         </section>
     </main>
-
-    <br />
-    <br />
-
     <footer>
-        <h5 class="footertitle">Contacto</h5>
-        <ul>
-            <li>
-                <a href="" class="linktext">
-                    <p>+54 11 6 XXX XXXX</p>
+        <section class="pie">
+        <div class="footer__links">
+                <h5 class="footer__links--titulo">Contacto</h5>
+                <a href="">
                     <img class="footericons" src="../imgs/icons8-whatsapp-64.png" alt="Whatsapp" />
+                    <p>+54 11 6 XXX XXXX</p>
                 </a>
-            </li>
-            <li>
-                <a href="" class="linktext">
-                    <p>veranofeel@veranofeel.com.ar</p>
+                <a href="">
                     <img class="footericons" src="../imgs/icons8-secured-letter-64.png" alt="Email" />
+                    <p>veranofeel@veranofeel.com.ar</p>
                 </a>
-            </li>
-        </ul>
+        </div>
 
-        <h5 class="footertitle">Seguinos!</h5>
-        <ul>
-            <li>
+        <div class="footer__redes">
+                <h5 class="footer__redes--titulo">Seguinos!</h5>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-instagram-64.png" alt="Instagram" />
                 </a>
-            </li>
-            <li>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-facebook-64.png" alt="Facebook" />
                 </a>
-            </li>
-            <li>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-twitter-squared-64.png" alt="Twitter" />
                 </a>
-            </li>
-            <li>
                 <a href="">
                     <img class="footericons" src="../imgs/icons8-youtube-64.png" alt="Youtube" />
                 </a>
-            </li>
-        </ul>
-     
+        </div>
+        </section>  
     </footer>
 
 </body>
