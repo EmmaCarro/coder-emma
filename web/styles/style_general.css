@@ -85,6 +85,21 @@ header {
     color: blanchedalmond;
 }
 
+/* Hamburguesa */
+.hamburguesa {
+    height: 32px;
+    width: 35px;
+    display: none;
+}
+
+.hamburgesa_linea {
+    height: 4px;
+    width: 35px;
+    border-radius: 10px;
+    background: lemonchiffon;
+    display: none;
+}
+
 
 /* TODAS LAS PAGINAS */
 /* FOOTER */
@@ -203,4 +218,53 @@ footer {
 .footericons:active {
     box-shadow: 0px 0px 5px aquamarine;
     transition: all 0.1s ease;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 810px) {
+    
+    .footer__links {
+        padding: 0%;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .footer__links {
+        padding: 0% 0% 0% 25%;
+        margin-bottom: 10%;
+    }
+    
+    .footer__links a{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hamburgesa_linea {
+        margin: 20% auto;
+        display: block;
+        height: 4px;
+        width: 35px;
+        border-radius: 10px;
+        background: lemonchiffon;
+    }
 }

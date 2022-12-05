@@ -36,7 +36,9 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0 30% 0 30%;
+    padding: 0 20% 0 20%;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 /* Texto del separador */
@@ -98,7 +100,7 @@
 /* TARJETAS DESTACADOS */
 .contenedor_tarjeta {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 5% 1% 5% 1%;
     background-color: blanchedalmond;
@@ -254,4 +256,49 @@
   0%   { background-position: 0% 30%, 0 0;}
   50%  { background-position: 100% 70%, 0 0;}
   100% { background-position: 0% 30%, 0 0;}
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 810px) {
+    .contenedor_tarjeta {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        margin-bottom: 5%;
+    }
+
+    .separador_cubos__titulo {
+        font-size: 28px;
+    }
+
+    .separador_cubos__texto {
+        font-size: 16px;
+    }
+
+    .separador_frase-frase {
+        white-space: nowrap;
+    }
+
+    .separador_frase-linea {
+        display: none;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    .hero_subtitulo {
+        font-size: 22px;
+    }
+    
+    .separador_cubos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    }
 }

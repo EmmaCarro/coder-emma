@@ -127,7 +127,7 @@
     justify-items: center;
     align-items: center;
     min-height: auto;
-    overflow: auto;
+    overflow:visible;
     margin: 2% 0 5% 0;
 }
 
@@ -144,8 +144,8 @@
 }
 
 .contenedor_imagenes--img img{
-    min-width: 370px;
-    min-height: 495px;
+    max-width: 310px;
+    max-height: 415px;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -290,4 +290,114 @@ select:focus {
     outline: none;
     border: 1px solid aquamarine;
     transition: all 1s;
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 810px) {
+    .contenedor_tarjetav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjetav {
+        margin-bottom: 5%;
+    }
+    
+    fieldset {
+        min-width: 500px;
+      }
+
+    input {
+        display: inline-block;
+        max-width: 150px;
+    }
+
+    fieldset label {
+        display: inline-block;
+    }
+    
+    .desdehasta {
+        display: inline-block;
+    }
+
+    fieldset select {
+        display: inline-block;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .tarjetav__tablelarge {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .tarjetav__tablelarge th {
+        font-size: 13px;
+        font-style: bold;
+    }
+
+    .contenedor_imagenes {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        min-height: max-content;
+        margin: 10% auto 10% auto;
+    }
+    
+    .contenedor_imagenes--img img{
+        max-width: auto;
+        max-height: 415px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    
+    .breadcrumbs {
+        display: none;
+    }
+
+    fieldset {
+        min-width: 350px;
+      }
+
+      fieldset div {
+        max-width: 330px;
+      }
+
+    input {
+        max-width: 100%;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .contenedor_imagenes {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(auto, 1fr);
+        margin: 10% auto 10% auto;
+        gap: 10px;
+    }
+    
+    .contenedor_imagenes--img img{
+        max-width: auto;
+        max-height: 315px;
+    }
+
+    .tarjetav__tablelarge {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .tarjetav__tablelarge th {
+        font-size: 9px;
+        font-style: bold;
+    }
 }
