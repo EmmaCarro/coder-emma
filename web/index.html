@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
 
+    <!-- libreria de animacion aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- css local -->
     <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 
@@ -103,7 +107,7 @@
         <!-- TARJETA CONTENEDORA DE ARTICULOS -->
         <section>   
             <div class="contenedor_tarjeta">
-                <article class="tarjeta">
+                <article data-aos="fade-up-left" class="tarjeta">
                     <h5 class="tarjeta__label">Destacado</h5>
                     <div class="tarjeta__contenido">
                         <a href="./pags/artics/00ranchokika.html">
@@ -121,7 +125,7 @@
                 </article>
 
                 <!-- TARJETA CONTENEDORA DE ARTICULOS -->
-                <article class="tarjeta">
+                <article data-aos="fade-up-left" class="tarjeta">
                     <h5 class="tarjeta__label">Destacado</h5>
                     <div class="tarjeta__contenido">
                         <a href="./pags/artics/01cabanarosita.html">                        
@@ -190,5 +194,11 @@
         </div>
         </section>
     </footer>
+
+    <!-- script de la libreria de animacion aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

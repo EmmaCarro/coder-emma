@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
+    <!-- libreria de animacion aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- css local -->
     <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 
@@ -68,7 +72,7 @@
 
             <!-- TARJETA CON VIDEO -->
             <div class="contenedor_tarjetav">
-                <article class="tarjetav">
+                <article data-aos="fade-up-left" class="tarjetav">
                     <div class="tarjetav__contenido">
                         <h2 class="tarjetav__contenido--titulo">RANCHO KIKA</h2>
 
@@ -116,7 +120,7 @@
                 </article>
 
                 <!-- TARJETA CON VIDEO 2 -->
-                <article class="tarjetav">
+                <article data-aos="fade-up-left" class="tarjetav">
                     <div class="tarjetav__contenido">
                         <h2 class="tarjetav__contenido--titulo">Cabaña Rosita</h2>
 
@@ -196,6 +200,11 @@
         </section>  
     </footer>
 
+    <!-- script de la libreria de animacion aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

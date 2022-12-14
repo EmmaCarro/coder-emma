@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
 
+    <!-- libreria de animacion aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- css local -->
     <link rel="stylesheet" href="../../styles/styles.css" />
 </head>
 
@@ -103,22 +107,22 @@
         
         <!-- IMAGENES FLOTANTES -->
         <section class="contenedor_imagenes">
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/1.jfif" alt="Rancho Kika 1" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/2.jfif" alt="Rancho Kika 1" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/3.jfif" alt="Rancho Kika 2" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/4.jfif" alt="Rancho Kika 3" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/5.jfif" alt="Rancho Kika 4" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/6.jfif" alt="Rancho Kika 5" />
             </figure>
         </section>
@@ -157,6 +161,12 @@
         </div>
         </section>  
     </footer>
+
+    <!-- script de la libreria de animacion aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
