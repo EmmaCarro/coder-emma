@@ -1,0 +1,1039 @@
+/*  */
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Sacarle el subrayado a los links */
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* Tipografia general */
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-image: linear-gradient(90deg, beige, blanchedalmond 15% 85%, beige);
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* TODAS LAS PAGINAS */
+/* BARRA DE NAVEGACION */
+/* Header entero */
+header {
+    background-color: cadetblue;
+    padding: 20px 10px;
+}
+
+/* Contenedor de la barra de navegacion */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Titulo de la pagina */
+.navbar_title {
+    text-decoration: none;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0 auto 0 10px;
+}
+.navbar_title a {
+    font-family: 'Caveat', italic;
+    color: burlywood;
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0 5px;
+}
+
+/* Lista de la barra de navegacion. Los links */
+.navbar {
+    /* Sin puntos en la lista de la barra de navegacion */
+    list-style-type: none;
+
+    display: flex;
+    margin: 0 10px 0 auto;
+}
+
+/* Icono o logo al lado de titulo de pagina */
+.navbar_title img {
+    display: flex;
+    justify-content: center;
+
+    border-radius: 50%;
+    margin-right: 5px;
+
+    max-width: 40px;
+    max-height: 40px;
+}
+
+/* Links de la navbar */
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {    
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: blanchedalmond;
+}
+
+/* Hamburguesa */
+.hamburger-menu {
+    display: none;
+}
+
+#menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: darkcyan;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: lemonchiffon;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+
+
+/* TODAS LAS PAGINAS */
+/* FOOTER */
+/* Footer general */
+footer {
+    background-color:cadetblue;
+}
+.pie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5%;
+}
+
+/* Titulo de "Contacto" */
+.footer__links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 25%;
+}
+.footer__links a {
+    color: blanchedalmond;
+    margin-bottom: 20px;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer__links--titulo {
+    font-weight: 600;
+    font-size: 18px;
+    color: burlywood;
+    margin-bottom: 40px;
+}
+
+/* Titulo de "Seguinos" */
+.footer__redes {
+    padding-left: 25%;
+}
+.footer__redes--titulo {
+    font-weight: 600;
+    font-size: 18px;
+    color: burlywood;
+    margin-bottom: 40px;
+}
+
+/* Iconos del footer */
+.footericons {
+    width: 28px;
+    height: 28px; 
+    margin-right: 10px;
+}
+
+
+/* HOME */
+/* BANNER */
+.hero {
+    font-weight: 300;
+    font-size: 28px;
+    background: url(../imgs/herobanner.jpg) no-repeat;
+	background-size: cover;
+	min-height: 350px;
+    max-height: 400px;
+    color: white;
+    margin: 0 0 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hero_titulo {
+    text-shadow: 1px 1px 10px aquamarine;
+}
+.hero_subtitulo {
+    text-shadow: 0px 0px 5px black;
+}
+
+
+/* HOME */
+/* SEPARADOR DEBAJO DEL BANNER */
+/* Contenedor de todo el separador */
+.separador_frase {
+    background-color:lemonchiffon;
+    background-image: radial-gradient(lemonchiffon, blanchedalmond 60% 80%);
+    min-height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20% 0 20%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Texto del separador */
+.separador_frase-frase {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    color: coral;
+    opacity: 75%;
+}
+
+/* Lineas que acompañan el texto */
+.separador_frase-linea {
+    width: 20%;
+    border: 1px solid coral;
+    opacity: 25%;
+}
+
+
+/* HOME */
+/* FRASES INFORMATIVAS EN 4 CUBOS */
+/* contenedor de cubos */
+.separador_cubos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}
+
+/* Cubos en general */
+.separador_cubos div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Cubo de titulo */
+.separador_cubos__titulo {
+    background-color: cadetblue;
+    font-weight: 100;
+    font-size: 30px;
+    color: azure;
+    text-align: center;
+    padding: 7%;
+}
+
+/* Cubo de texto */
+.separador_cubos__texto {
+    background-color: honeydew;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+    padding: 7%;
+}
+
+
+/* HOME */
+/* TARJETAS DESTACADOS */
+.contenedor_tarjeta {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5% 1% 5% 1%;
+    background-color: blanchedalmond;
+}
+.tarjeta {
+    max-width: fit-content;
+    min-width: auto;
+}
+
+/* Solapa "Destacado" arriba de cada tarjeta */
+.tarjeta__label {
+    color:cadetblue;
+    background-color: honeydew;
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: aquamarine;
+    margin-bottom: 1px;
+    max-width: fit-content;
+    min-width: auto;
+    padding: 5px;
+}
+
+/* DIV que engloba la imagen, titulo y texto de la tarjeta */
+.tarjeta__contenido {
+    background-color: powderblue;
+    border-radius: 10px;
+    padding: 3%;
+    width: fit-content;
+    min-width: auto;
+    min-height: 410px;
+    box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen del articulo destacado */
+.tarjeta__contenido--imagen1 {
+    background-image: url(../imgs/kika/1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 200px;
+    color: transparent;
+}
+.tarjeta__contenido--imagen2 {
+    background-image: url(../imgs/rosita/8.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 200px;
+    color: transparent;
+}
+
+/* Titulo del articulo destacado */
+.tarjeta__contenido--titulo {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: bold;
+    color:darkcyan;
+    margin: 2% 0 2% 0;
+}
+
+/* Texto del articulo destacado */
+.tarjeta__contenido--texto {
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 300px;
+
+    margin-bottom: 5%;
+}
+
+/* Boton VER de la tarjeta */
+.tarjeta__contenido--boton {
+    color: slategrey;
+    background-color: azure;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 5px;
+
+    max-width: fit-content;
+    min-width: auto;
+
+    margin: auto 1% 1% auto;
+}
+
+
+
+/* HOME */
+/* SEPARADOR "DE CIRCULOS" ANTES DE FOOTER */
+.separador_circulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding: 10% 5% 7% 5%;
+    background-color:lemonchiffon;
+    background-image: linear-gradient(blanchedalmond, lemonchiffon 20% 100%);
+}
+
+/* Contenedores de cada imagen y texto del separador */
+.separador_circulos__combo {    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Imagenes del separador antes del footer */
+.separador_circulos__img {
+    border-radius: 40px;
+    opacity: 40%;
+    filter:grayscale(100%);
+}
+
+/* Texto del separador antes del footer */
+.separador_circulos__txt {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+/* TODAS LAS PAGINAS EXCEPTO HOME */
+/* Navegacion o breadcrumbs */
+.breadcrumbs {
+    margin: 1% auto 1% 0;
+    color: grey;
+}
+.breadcrumbs a {
+    color: darkcyan;
+}
+
+
+/* PAGINAS DE ARTICULOS */
+/* Titulo */
+.title {
+    color: darkcyan;
+    margin: 5% auto 1% auto;
+    text-align: center;
+}
+
+/* Subtitulo */
+.subtitle {
+    color: darkseagreen;
+    margin: 1% auto 5% auto;
+    text-align: center;
+}
+
+
+/* GALERIA - VIDEOS */
+/* Tarjetas de videos */
+.contenedor_tarjetav {
+    padding: 5% 1% 5% 1%;
+    background-color: blanchedalmond;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 3%;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+.tarjetav {
+    width: fit-content;
+    min-width: auto;
+}
+
+/* DIV que engloba la imagen, titulo y texto de la tarjeta */
+.tarjetav__contenido {
+    background-color: powderblue;
+    border-radius: 10px;
+    padding: 3%;
+    min-height: 610px;
+    max-width: 500px;
+    box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen del articulo destacado */
+.tarjetav__contenido--video {
+    border-radius: 10px;
+    min-width: fit-content;
+    min-height: 300px;
+    margin: 3% 0 3% 0;
+}
+
+/* Titulo del articulo destacado */
+.tarjetav__contenido--titulo {
+    font-size: 22px;
+    font-weight: 600;
+    font-style: bold;
+    color:darkcyan;
+    margin: 2% 0 4% 0;
+    text-align: center;
+}
+
+/* Texto del articulo destacado */
+.tarjetav__contenido--texto {
+    font-size: 12px;
+    font-weight: 500;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+/* Boton link de cada tarjeta */
+.tarjetav__contenido--boton {
+    color: slategrey;
+    background-color: azure;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    padding: 5px;
+
+    max-width: fit-content;
+    min-width: auto;
+
+    margin: auto 1% 0 auto;
+}
+
+/* Tabla de estadisticas arriba del video */
+.tarjetav__table {
+    border: 0px;
+    font-size: 11px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(36,11,111,0) 0%, paleturquoise 5% 95%, rgba(0,0,0,0) 100%);
+}
+
+/* Tabla de estadisticas arriba de mapa e imagenes */
+.tarjetav__tablelarge {
+    border: 0px;
+    font-size: 16px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(36,11,111,0) 0%, lemonchiffon 5% 95%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    margin: 4% auto auto auto;
+}
+
+
+/* GALERIA - IMAGENES */
+/* Seccion contenedora de imagenes */
+.contenedor_imagenes {
+    padding: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 5%;
+    justify-items: center;
+    align-items: center;
+    min-height: auto;
+    overflow:visible;
+    margin: 2% 0 5% 0;
+}
+
+/* Imagenes del contenedor de imagenes */
+.contenedor_imagenes--img {
+    overflow: auto;
+    border-radius: 5%;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_imagenes--img img{
+    max-width: 310px;
+    max-height: 415px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Mapa de la seccion galeria imagenes */
+.mapachico {
+    min-width: 100%;
+    min-height: 300px;
+}
+
+
+/* SECCION MAPA */
+/* Mapa de la seccion Mapa */
+.mapagrande {
+    min-width: 100%;
+    min-height: 600px;
+    margin-bottom: 5%;
+}
+
+/* SECCION CONTACTO */
+form {
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+fieldset {
+    min-width: 600px;
+    display: block;
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgba(255, 250, 205, 0.5);
+  }
+
+  fieldset div {
+    margin-bottom: 2%;
+  }
+
+  legend {
+    background-color: lemonchiffon;
+    color: gray;
+    padding: 5px;
+    border-radius: 3%;
+    border: 1px solid gray;
+    border-radius: 10px;
+  }
+
+  input {
+    display: inline-block;
+    margin: 1%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 1%;
+  }
+
+  fieldset label {
+    display: inline-block;
+    margin: 1%;
+  }
+
+  fieldset select {
+    display: inline-block;
+    margin: 1%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 1%;
+  }
+
+  fieldset button {
+    color: slategrey;
+    background-color: azure;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    padding: 5px;
+
+    max-width: fit-content;
+
+    margin: 2%;
+  }
+
+
+
+
+
+
+/* TRANSFORMACIONES/ANIMACIONES */
+/* HEADER */
+/* Navbar imagen */
+.navbar_title a img {
+    transform: scale(1);
+    transition: all 0.2s ease-out;
+}
+.navbar_title a img:hover {
+    transform: scale(1.3);
+    transition: all 0.2s ease-out;
+}
+
+/* Navbar Titulo */
+.navbar_title a {
+    transition: all 0.7s ease;
+}
+.navbar_title a:hover {
+    text-shadow: 0px 0px 10px white;
+    transition: all 0.7s ease;
+}
+.navbar_title a:active {
+    text-shadow: 0px 0px 10px aquamarine;
+    transition: all 0.1s ease;
+}
+
+/* Navbar menu*/
+.navbar li a {
+    background-image: linear-gradient(lemonchiffon, lemonchiffon);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.1s ease-in;
+}
+.navbar li a:hover {
+    color: white;
+    border-bottom: 1px solid lemonchiffon;
+    border-radius: 15%;
+    background-size: 100% 1px;
+    transition: 0.1s ease-in;
+}
+.navbar li a:active {
+    background-size: 100% 1px;
+    color: aquamarine;
+    border-bottom: 1px solid aquamarine;
+    background-image: linear-gradient(aquamarine, aquamarine);
+    border-radius: 15%;
+    transition: 0.1s ease-in;
+}
+
+/* ANIMACION HAMBURGUESA */
+
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    right: 0 !important;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: lemonchiffon;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__item:hover {
+    background-color: cyan;
+  }
+
+
+/* FOOTER */
+/* Iconos de redes */
+.footericons {
+    transform: scale(1);
+    transition: all 0.2s ease;
+}
+.footericons:hover {
+    transform: scale(1.3);
+    transition: all 0.2s ease;
+}
+.footericons:active {
+    box-shadow: 0px 0px 5px aquamarine;
+    transition: all 0.1s ease;
+}
+
+
+/* HOME Boton de la tarjeta */
+.tarjeta__contenido--boton {
+    transition: all 0.2s ease;
+}
+.tarjeta__contenido--boton:hover {
+    border: 1px solid darkcyan;
+    background-color: lemonchiffon;
+    transition: all 0.2s ease;
+}
+.tarjeta__contenido--boton:active {
+    border: 1px solid aquamarine;
+    background-color: white;
+    color: aquamarine;
+    transition: all 0.2s ease;
+}
+
+
+/* HERO */
+.hero {
+    animation: animacionflow 30s ease infinite;
+}
+@keyframes animacionflow {
+  0%   { background-position: 0% 30%, 0 0;}
+  50%  { background-position: 100% 70%, 0 0;}
+  100% { background-position: 0% 30%, 0 0;}
+}
+
+/* Boton de la tarjeta */
+.tarjetav__contenido--boton {
+    transition: all 0.2s ease;
+}
+.tarjetav__contenido--boton:hover {
+    border: 1px solid darkcyan;
+    background-color: lemonchiffon;
+    transition: all 0.2s ease;
+}
+.tarjetav__contenido--boton:active {
+    border: 1px solid aquamarine;
+    background-color: white;
+    color: aquamarine;
+    transition: all 0.2s ease;
+}
+
+/* Breadcrumbs links */
+.breadcrumbs a {
+    border-radius: 15%;
+    background-color: transparent;
+}
+.breadcrumbs a:hover {
+    border-radius: 15%;
+    background-color: lemonchiffon;
+    color: darkcyan;
+    transition: all 0.2s ease;
+}
+
+/* Boton de formulario contacto */
+fieldset button {
+    transition: all 0.2s ease;
+}
+fieldset button:hover {
+    border: 1px solid darkcyan;
+    background-color: lemonchiffon;
+    transition: all 0.2s ease;
+}
+fieldset button:active {
+    border: 1px solid aquamarine;
+    background-color: white;
+    color: aquamarine;
+    transition: all 0.2s ease;
+}
+
+/* Espacios a rellenar de formulario contacto */
+input:focus {
+    outline: none;
+    border: 1px solid aquamarine;
+    transition: all 1s;
+}
+select:focus {
+    outline: none;
+    border: 1px solid aquamarine;
+    transition: all 1s;
+}
+
+
+
+
+/* RESPONSIVE GENERAL*/
+@media (max-width: 810px) {
+    
+    .footer__links {
+        padding: 0%;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .footer__links {
+        padding: 0% 0% 0% 25%;
+        margin-bottom: 10%;
+    }
+    
+    .footer__links a{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+/* RESPONSIVE HOME */
+@media (max-width: 810px) {
+    .contenedor_tarjeta {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        margin-bottom: 5%;
+    }
+
+    .separador_cubos__titulo {
+        font-size: 28px;
+    }
+
+    .separador_cubos__texto {
+        font-size: 16px;
+    }
+
+    .separador_frase-frase {
+        white-space: nowrap;
+    }
+
+    .separador_frase-linea {
+        display: none;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    .hero_subtitulo {
+        font-size: 22px;
+    }
+    
+    .separador_frase-frase {
+        position: relative;
+    }
+
+    .separador_cubos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    }
+}
+
+/* RESPONSIVE ARTICULO*/
+@media (max-width: 810px) {
+    .contenedor_tarjetav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjetav {
+        margin-bottom: 5%;
+    }
+    
+    fieldset {
+        min-width: 500px;
+      }
+
+    input {
+        display: inline-block;
+        max-width: 150px;
+    }
+
+    fieldset label {
+        display: inline-block;
+    }
+    
+    .desdehasta {
+        display: inline-block;
+    }
+
+    fieldset select {
+        display: inline-block;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .tarjetav__tablelarge {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .tarjetav__tablelarge th {
+        font-size: 13px;
+        font-style: bold;
+    }
+
+    .contenedor_imagenes {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        min-height: max-content;
+        margin: 10% auto 10% auto;
+    }
+    
+    .contenedor_imagenes--img img{
+        max-width: auto;
+        max-height: 415px;
+    }
+}
+
+
+@media (max-width: 540px) {
+    
+    .breadcrumbs {
+        display: none;
+    }
+
+    fieldset {
+        min-width: 350px;
+      }
+
+      fieldset div {
+        max-width: 330px;
+      }
+
+    input {
+        max-width: 100%;
+    }
+
+    input[type="date"] {
+        max-width: 30%;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .contenedor_imagenes {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(auto, 1fr);
+        margin: 10% auto 10% auto;
+        gap: 10px;
+    }
+    
+    .contenedor_imagenes--img img{
+        max-width: auto;
+        max-height: 315px;
+    }
+
+    .tarjetav__tablelarge {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .tarjetav__tablelarge th {
+        font-size: 9px;
+        font-style: bold;
+    }
+
+    .tarjetav__table th {
+        font-size: 9px;
+        font-style: bold;
+    }
+}

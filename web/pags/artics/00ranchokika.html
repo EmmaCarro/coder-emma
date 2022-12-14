@@ -16,13 +16,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="../../styles/style_general.css" />
-    <link rel="stylesheet" href="../../styles/style_article.css" />
+    <!-- libreria de animacion aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- css local -->
+    <link rel="stylesheet" href="../../styles/styles.css" />
 </head>
 
 
 <body>
 
+        <!-- HEADER -->
     <header>
         <div class="encabezado">
                 <div class="navbar_title">
@@ -36,26 +40,39 @@
                         <li><a href="../../pags/mapa.html" >Mapa</a></li>
                         <li><a href="../../pags/contacto.html" >Contacto</a></li>
                     </ul>
-                    <div class="hamburgesa">
-                        <span class="hamburgesa_linea"></span>
-                        <span class="hamburgesa_linea"></span>
-                        <span class="hamburgesa_linea"></span>
-                    </div>
+
+                    <!-- HAMBURGUESA REEMPLAZO DE MENU DE NAVEGACION PARA MOBILE -->
+                    <!-- DEBERIA USAR JAVASCRIPT -->
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                          <span></span>
+                        </label>
+    
+                        <ul class="menu__box">
+                          <li><a class="menu__item" href="../../index.html">Inicio</a></li>
+                          <li><a class="menu__item" href="../../pags/galeria.html">Galeria</a></li>
+                          <li><a class="menu__item" href="../../pags/mapa.html">Mapa</a></li>
+                          <li><a class="menu__item" href="../../pags/contacto.html">Contacto</a></li>
+                        </ul>
                 </nav>
         </div>
     </header>
 
 
     <main>
+        <!-- BREADCRUMBS -->
         <div class="breadcrumbs">
             <p><a href="../index.html">Inicio</a> > <a href="../galeria.html">Galeria</a> > RanchoKika</p>
         </div>
 
+        <!-- TITULO Y SUBTITULO -->
         <h2 class="subtitle">GALERIA</h2>
         <h1 class="title">RANCHO KIKA</h1>
         
         <section>
             
+            <!-- ESTADISTICAS TABLA DE ARTICULO -->
             <div>
                 <table class="tarjetav__tablelarge">
                     <thead>
@@ -83,33 +100,36 @@
             </div>
         </section>
 
+        <!-- MAPA CHICO -->
         <section>
             <iframe class="mapachico" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.655673460206!2d-57.45460392780701!3d-37.774671145166955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584cd83f70ce50d%3A0x5907245a2c585a97!2sThe%20Ranch!5e0!3m2!1ses!2sar!4v1667866574175!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         
+        <!-- IMAGENES FLOTANTES -->
         <section class="contenedor_imagenes">
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/1.jfif" alt="Rancho Kika 1" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/2.jfif" alt="Rancho Kika 1" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/3.jfif" alt="Rancho Kika 2" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/4.jfif" alt="Rancho Kika 3" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/5.jfif" alt="Rancho Kika 4" />
             </figure>
-            <figure class="contenedor_imagenes--img">
+            <figure data-aos="flip-right" class="contenedor_imagenes--img">
                 <img src="../../imgs/kika/6.jfif" alt="Rancho Kika 5" />
             </figure>
         </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <section class="pie">
         <div class="footer__links">
@@ -141,6 +161,12 @@
         </div>
         </section>  
     </footer>
+
+    <!-- script de la libreria de animacion aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
