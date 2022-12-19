@@ -1,0 +1,19 @@
+/*  */
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Sacarle el subrayado a los links */
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* Tipografia general */
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-image: linear-gradient(90deg, beige, blanchedalmond 15% 85%, beige);
+    max-width: 1320px;
+    margin: 0 auto;
+}
