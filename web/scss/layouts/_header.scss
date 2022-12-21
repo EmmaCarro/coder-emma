@@ -26,46 +26,45 @@ header {
     display: flex;
     margin: 0 10px 0 auto;
 
-  /* Titulo de la pagina */
-  &_title {
-    text-decoration: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto 0 10px;
+    /* Titulo de la pagina */
+    &_title {
+      text-decoration: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 auto 0 10px;
 
-    & a {
-      font-family: 'Caveat', italic;
-      color: burlywood;
-      font-weight: 600;
-      font-size: 26px;
-      margin: 0 5px;
+      & a {
+        font-family: 'Caveat', italic;
+        color: burlywood;
+        font-weight: 600;
+        font-size: 26px;
+        margin: 0 5px;
+      }
     }
-  }
 
-  /* Icono o logo al lado de titulo de pagina */
-  &_title img {
-    display: flex;
-    justify-content: center;
+    // * Icono o logo al lado de titulo de pagina */
+    &_icon {
+      display: flex;
+      justify-content: center;
+      margin-right: 5px;
+      width: 40px;
+      height: 40px;
+    }
 
-    border-radius: 50%;
-    margin-right: 5px;
+    /* Links de la navbar */
+    & li {
+      margin: 0 15px;
+    }
 
-    max-width: 40px;
-    max-height: 40px;
-  }
-
-  /* Links de la navbar */
-  & li {
-    margin: 0 15px;
-  }
-  & a {    
-    text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    color: blanchedalmond;
-  }
+    & a {    
+      text-decoration: none;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 400;
+      color: blanchedalmond;
+    }
 }
+
 
 /* Hamburguesa */
 .hamburger-menu {
@@ -120,7 +119,8 @@ header {
 /* TRANSFORMACIONES/ANIMACIONES */
 /* HEADER */
 /* Navbar imagen */
-.navbar_title a img {
+.navbar_icon {
+
     transform: scale(1);
     transition: all 0.2s ease-out;
 
