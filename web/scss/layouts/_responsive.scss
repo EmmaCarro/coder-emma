@@ -1,0 +1,196 @@
+// RESPONSIVE
+
+@media (max-width: 810px) {
+
+    // RESPONSIVE TARJETA PAGINA HOME 810px
+    .contenedor_tarjeta {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        margin-bottom: 5%;
+    }
+
+    // RESPONSIVE SEPARADOR CUBOS 810px
+    .separador_cubos {
+        &__titulo {
+            font-size: 28px;
+        }
+        &__texto {
+            font-size: 16px;
+        }
+    }
+
+    // RESPONSIVE SEPARADOR FRASE 810px
+    .separador_frase-frase {
+        white-space: nowrap;
+    }
+
+    .separador_frase-linea {
+        display: none;
+    }
+    
+    // RESPONSIVE FORMULARIO 810px
+    fieldset {
+        min-width: 500px;
+
+        & label {
+            display: inline-block;
+        }
+
+        & select {
+            display: inline-block;
+        }
+      }
+
+    input {
+        display: inline-block;
+        max-width: 150px;
+    }
+
+    .desdehasta {
+        display: inline-block;
+    }
+
+    // RESPONSIVE SUBTITULO 810px
+    .subtitle {
+        font-size: 18px;
+    }
+
+    // RESPONSIVE TARJETA PAGINA DE ARTICULOS 810px
+    .tarjetav__tablelarge {
+        table-layout: fixed;
+        width: 100%;
+
+        & th {
+            font-size: 13px;
+            font-style: bold;
+        }
+    }
+
+    .contenedor_tarjetav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjetav {
+        margin-bottom: 5%;
+    }
+
+    // RESPONSIVE GRID IMAGENES 810px
+    .contenedor_imagenes {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        min-height: max-content;
+        margin: 10% auto 10% auto;
+
+        &--img img{
+            max-width: auto;
+            max-height: 415px;
+        }
+    }
+
+    // RESPONSIVE FOOTER 810px
+    .footer__links {
+        padding: 0%;
+    }
+}
+
+@media (max-width: 540px) {
+
+    // RESPONSIVE HERO 540px
+    .hero_subtitulo {
+        font-size: 22px;
+    }
+    
+    // RESPONSIVE SEPARADOR CUBOS 540px
+    .separador_cubos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    }
+
+    // RESPONSIVE BREADCRUMBS 540px
+    .breadcrumbs {
+        display: none;
+    }
+
+    // RESPONSIVE FORMULARIO 540px
+    fieldset {
+        min-width: 350px;
+
+        & div {
+          max-width: 330px;
+        }
+      }
+
+    input {
+        max-width: 100%;
+
+        &[type="date"] {
+            max-width: 30%;
+        }
+    }
+
+    // RESPONSIVE SUBTITULO 540px
+    .subtitle {
+        display: none;
+    }
+
+    // RESPONSIVE GRID DE IMAGENES 540px
+    .contenedor_imagenes {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(auto, 1fr);
+        margin: 10% auto 10% auto;
+        gap: 10px;
+
+        &--img img{
+            max-width: auto;
+            max-height: 315px;
+        }
+    }
+    
+    // RESPONSIVE TARJETA 540px
+    .tarjetav__tablelarge {
+        table-layout: fixed;
+        width: 100%;
+
+        & th {
+            font-size: 9px;
+            font-style: bold;
+        }
+    }
+
+    .tarjetav__table th {
+        font-size: 9px;
+        font-style: bold;
+    }
+
+    // RESPONSIVE HEADER 540px
+    .navbar {
+        display: none;
+    }
+  
+    .hamburger-menu {
+        display: block;
+    }
+
+    // RESPONSIVE FOOTER 540px
+    .footer__links {
+        padding: 0% 0% 0% 25%;
+        margin-bottom: 10%;
+
+        & a{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .pie {
+        display: flex;
+        flex-direction: column;
+    }
+}

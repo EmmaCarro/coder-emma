@@ -211,18 +211,3 @@ header {
 .menu__item:hover {
   background-color: cyan;
 }
-
-
-
-
-// RESPONSIVE HEADER
-
-@media (max-width: 540px) {
-  .navbar {
-      display: none;
-  }
-
-  .hamburger-menu {
-      display: block;
-  }
-}

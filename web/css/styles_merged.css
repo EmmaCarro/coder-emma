@@ -187,18 +187,12 @@ header {
 .menu__item:hover {
   background-color: cyan; }
 
-@media (max-width: 540px) {
-  .navbar {
-    display: none; }
-  .hamburger-menu {
-    display: block; } }
-
 /* HOME */
 /* BANNER */
 .hero {
   font-weight: 300;
   font-size: 28px;
-  background: url(../imgs/herobanner.jpg) no-repeat;
+  background: url(../images/herobanner.jpg) no-repeat;
   background-size: cover;
   min-height: 350px;
   max-height: 400px;
@@ -308,7 +302,7 @@ header {
     width: fit-content;
     min-width: auto; }
   .tarjeta__contenido--imagen1 {
-    background-image: url(../imgs/kika/1.jfif);
+    background-image: url(../images/kika/1.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -317,7 +311,7 @@ header {
     min-height: 200px;
     color: transparent; }
   .tarjeta__contenido--imagen2 {
-    background-image: url(../imgs/rosita/8.jfif);
+    background-image: url(../images/rosita/8.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -399,29 +393,6 @@ header {
     background-position: 100% 70%, 0 0; }
   100% {
     background-position: 0% 30%, 0 0; } }
-
-/* RESPONSIVE HOME */
-@media (max-width: 810px) {
-  .contenedor_tarjeta, .contenedor_tarjetav {
-    flex-direction: column; }
-  .tarjeta, .tarjetav {
-    margin-bottom: 5%; }
-  .separador_cubos__titulo {
-    font-size: 28px; }
-  .separador_cubos__texto {
-    font-size: 16px; }
-  .separador_frase-frase {
-    white-space: nowrap; }
-  .separador_frase-linea {
-    display: none; } }
-
-@media (max-width: 540px) {
-  .hero_subtitulo {
-    font-size: 22px; }
-  .separador_cubos {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto; } }
 
 /* TODAS LAS PAGINAS EXCEPTO HOME */
 /* Navegacion o breadcrumbs */
@@ -632,74 +603,6 @@ select:focus {
   border: 1px solid aquamarine;
   transition: all 1s; }
 
-/* RESPONSIVE PAGINA DE ARTICULO */
-@media (max-width: 810px) {
-  .contenedor_tarjetav {
-    display: flex;
-    flex-direction: column; }
-  .tarjetav {
-    margin-bottom: 5%; }
-  fieldset {
-    min-width: 500px; }
-    fieldset label {
-      display: inline-block; }
-    fieldset select {
-      display: inline-block; }
-  input {
-    display: inline-block;
-    max-width: 150px; }
-  .desdehasta {
-    display: inline-block; }
-  .subtitle {
-    font-size: 18px; }
-  .tarjetav__tablelarge {
-    table-layout: fixed;
-    width: 100%; }
-    .tarjetav__tablelarge th {
-      font-size: 13px;
-      font-style: bold; }
-  .contenedor_imagenes {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
-    min-height: max-content;
-    margin: 10% auto 10% auto; }
-    .contenedor_imagenes--img img {
-      max-width: auto;
-      max-height: 415px; } }
-
-@media (max-width: 540px) {
-  .breadcrumbs {
-    display: none; }
-  fieldset {
-    min-width: 350px; }
-    fieldset div {
-      max-width: 330px; }
-  input {
-    max-width: 100%; }
-    input[type="date"] {
-      max-width: 30%; }
-  .subtitle {
-    display: none; }
-  .contenedor_imagenes {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(auto, 1fr);
-    margin: 10% auto 10% auto;
-    gap: 10px; }
-    .contenedor_imagenes--img img {
-      max-width: auto;
-      max-height: 315px; }
-  .tarjetav__tablelarge {
-    table-layout: fixed;
-    width: 100%; }
-    .tarjetav__tablelarge th {
-      font-size: 9px;
-      font-style: bold; }
-  .tarjetav__table th {
-    font-size: 9px;
-    font-style: bold; } }
-
 /* FOOTER */
 footer {
   background-color: cadetblue; }
@@ -758,12 +661,96 @@ footer {
     box-shadow: 0px 0px 5px aquamarine;
     transition: all 0.1s ease; }
 
-/* RESPONSIVE FOOTER */
 @media (max-width: 810px) {
+  .contenedor_tarjeta, .contenedor_tarjetav {
+    flex-direction: column; }
+  .tarjeta, .tarjetav {
+    margin-bottom: 5%; }
+  .separador_cubos__titulo {
+    font-size: 28px; }
+  .separador_cubos__texto {
+    font-size: 16px; }
+  .separador_frase-frase {
+    white-space: nowrap; }
+  .separador_frase-linea {
+    display: none; }
+  fieldset {
+    min-width: 500px; }
+    fieldset label {
+      display: inline-block; }
+    fieldset select {
+      display: inline-block; }
+  input {
+    display: inline-block;
+    max-width: 150px; }
+  .desdehasta {
+    display: inline-block; }
+  .subtitle {
+    font-size: 18px; }
+  .tarjetav__tablelarge {
+    table-layout: fixed;
+    width: 100%; }
+    .tarjetav__tablelarge th {
+      font-size: 13px;
+      font-style: bold; }
+  .contenedor_tarjetav {
+    display: flex;
+    flex-direction: column; }
+  .tarjetav {
+    margin-bottom: 5%; }
+  .contenedor_imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    min-height: max-content;
+    margin: 10% auto 10% auto; }
+    .contenedor_imagenes--img img {
+      max-width: auto;
+      max-height: 415px; }
   .footer__links {
     padding: 0%; } }
 
 @media (max-width: 540px) {
+  .hero_subtitulo {
+    font-size: 22px; }
+  .separador_cubos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+  .breadcrumbs {
+    display: none; }
+  fieldset {
+    min-width: 350px; }
+    fieldset div {
+      max-width: 330px; }
+  input {
+    max-width: 100%; }
+    input[type="date"] {
+      max-width: 30%; }
+  .subtitle {
+    display: none; }
+  .contenedor_imagenes {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(auto, 1fr);
+    margin: 10% auto 10% auto;
+    gap: 10px; }
+    .contenedor_imagenes--img img {
+      max-width: auto;
+      max-height: 315px; }
+  .tarjetav__tablelarge {
+    table-layout: fixed;
+    width: 100%; }
+    .tarjetav__tablelarge th {
+      font-size: 9px;
+      font-style: bold; }
+  .tarjetav__table th {
+    font-size: 9px;
+    font-style: bold; }
+  .navbar {
+    display: none; }
+  .hamburger-menu {
+    display: block; }
   .footer__links {
     padding: 0% 0% 0% 25%;
     margin-bottom: 10%; }

@@ -77,32 +77,3 @@ footer {
         transition: all 0.1s ease;
     }
 }
-
-
-
-/* RESPONSIVE FOOTER */
-@media (max-width: 810px) {
-    
-    .footer__links {
-        padding: 0%;
-    }
-}
-
-@media (max-width: 540px) {
-
-    .footer__links {
-        padding: 0% 0% 0% 25%;
-        margin-bottom: 10%;
-
-        & a{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-
-    .pie {
-        display: flex;
-        flex-direction: column;
-    }
-}
