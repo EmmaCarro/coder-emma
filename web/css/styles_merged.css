@@ -20,7 +20,7 @@ body {
 /* BARRA DE NAVEGACION */
 /* Header entero */
 header {
-  background-color: cadetblue;
+  background-color: #5f9ea0;
   padding: 20px 10px; }
 
 /* Contenedor de la barra de navegacion */
@@ -54,6 +54,7 @@ header {
   .navbar_icon {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-right: 5px;
     width: 40px;
     height: 40px; }
@@ -63,7 +64,7 @@ header {
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    color: blanchedalmond; }
+    color: #ffebcd; }
 
 /* Hamburguesa */
 .hamburger-menu {
@@ -93,7 +94,7 @@ header {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: darkcyan;
+  background-color: #008b8b;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   transition-duration: .25s;
   z-index: 1; }
@@ -101,7 +102,7 @@ header {
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: lemonchiffon;
+  color: #fffacd;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
@@ -125,27 +126,27 @@ header {
     text-shadow: 0px 0px 10px white;
     transition: all 0.7s ease; }
   .navbar_title a:active {
-    text-shadow: 0px 0px 10px aquamarine;
+    text-shadow: 0px 0px 10px #7fffd4;
     transition: all 0.1s ease; }
 
 /* Navbar menu*/
 .navbar li a {
-  background-image: linear-gradient(lemonchiffon, lemonchiffon);
+  background-image: linear-gradient(#fffacd, #fffacd);
   background-size: 0 1px;
   background-position: 0 100%;
   background-repeat: no-repeat;
   transition: 0.1s ease-in; }
   .navbar li a:hover {
     color: white;
-    border-bottom: 1px solid lemonchiffon;
+    border-bottom: 1px solid #fffacd;
     border-radius: 15%;
     background-size: 100% 1px;
     transition: 0.1s ease-in; }
   .navbar li a:active {
     background-size: 100% 1px;
-    color: aquamarine;
-    border-bottom: 1px solid aquamarine;
-    background-image: linear-gradient(aquamarine, aquamarine);
+    color: #7fffd4;
+    border-bottom: 1px solid #7fffd4;
+    background-image: linear-gradient(#7fffd4, #7fffd4);
     border-radius: 15%;
     transition: 0.1s ease-in; }
 
@@ -163,7 +164,7 @@ header {
 
 #menu__toggle:checked ~ .menu__box {
   right: 0;
-  background-color: darkcyan;
+  background-color: #008b8b;
   max-height: 25%; }
 
 .menu__btn > span,
@@ -173,7 +174,7 @@ header {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: lemonchiffon;
+  background-color: #fffacd;
   transition-duration: .25s; }
 
 .menu__btn > span::before {
@@ -203,7 +204,7 @@ header {
   align-items: center;
   flex-direction: column; }
   .hero_titulo {
-    text-shadow: 1px 1px 10px aquamarine; }
+    text-shadow: 1px 1px 10px #7fffd4; }
   .hero_subtitulo {
     text-shadow: 0px 0px 5px black; }
 
@@ -211,14 +212,13 @@ header {
 /* SEPARADOR DEBAJO DEL BANNER */
 /* Contenedor de todo el separador */
 .separador_frase {
-  background-color: lemonchiffon;
-  background-image: radial-gradient(lemonchiffon, blanchedalmond 60% 80%);
+  background-color: #fffacd;
+  background-image: radial-gradient(#fffacd, #ffebcd 60% 80%);
   min-height: 200px;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   padding: 0 20% 0 20%;
-  flex-direction: row;
   flex-wrap: nowrap;
   /* Texto del separador */
   /* Lineas que acompañan el texto */ }
@@ -239,23 +239,26 @@ header {
 .separador_cubos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 0%;
   margin: 0 auto;
   /* Cubos en general */
   /* Cubo de titulo */
   /* Cubo de texto */ }
   .separador_cubos div {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: auto; }
   .separador_cubos__titulo {
-    background-color: cadetblue;
+    background-color: #5f9ea0;
     font-weight: 100;
     font-size: 30px;
     color: azure;
     text-align: center;
-    padding: 7%; }
+    padding: 7%;
+    min-width: 100%; }
   .separador_cubos__texto {
     background-color: honeydew;
     font-weight: 200;
@@ -267,7 +270,7 @@ header {
 /* TARJETAS DESTACADOS */
 .contenedor_tarjeta, .contenedor_tarjetav {
   padding: 5% 1% 5% 1%;
-  background-color: blanchedalmond;
+  background-color: #ffebcd;
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
@@ -282,11 +285,11 @@ header {
   /* Texto del articulo destacado */
   /* Boton VER de la tarjeta */ }
   .tarjeta__label {
-    color: cadetblue;
+    color: #5f9ea0;
     background-color: honeydew;
     border: solid 2px;
     border-radius: 10px;
-    border-color: aquamarine;
+    border-color: #7fffd4;
     margin-bottom: 1px;
     max-width: fit-content;
     min-width: auto;
@@ -298,6 +301,8 @@ header {
     min-height: 410px;
     box-shadow: 5px 5px 25px 3px rgba(0, 0, 0, 0.4);
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     width: fit-content;
     min-width: auto; }
@@ -323,7 +328,7 @@ header {
     font-size: 18px;
     font-weight: 600;
     font-style: bold;
-    color: darkcyan;
+    color: #008b8b;
     margin: 2% 0 2% 0; }
   .tarjeta__contenido--texto, .tarjetav__contenido--texto {
     font-size: 12px;
@@ -345,10 +350,12 @@ header {
 .separador_circulos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 0%;
   margin: auto;
   padding: 10% 5% 7% 5%;
-  background-color: lemonchiffon;
-  background-image: linear-gradient(blanchedalmond, lemonchiffon 20% 100%);
+  background-color: #fffacd;
+  background-image: linear-gradient(#ffebcd, #fffacd 20% 100%);
   /* Contenedores de cada imagen y texto del separador */
   /* Imagenes del separador antes del footer */
   /* Texto del separador antes del footer */ }
@@ -373,16 +380,16 @@ header {
 .tarjeta__contenido--boton, .tarjetav__contenido--boton {
   transition: all 0.2s ease; }
   .tarjeta__contenido--boton:hover, .tarjetav__contenido--boton:hover {
-    border: 1px solid darkcyan;
-    background-color: lemonchiffon;
+    border: 1px solid #008b8b;
+    background-color: #fffacd;
     transition: all 0.2s ease; }
   .tarjeta__contenido--boton:active, .tarjetav__contenido--boton:active {
-    border: 1px solid aquamarine;
+    border: 1px solid #7fffd4;
     background-color: white;
-    color: aquamarine;
+    color: #7fffd4;
     transition: all 0.2s ease; }
 
-/* HERO */
+/* HERO ANIMACION */
 .hero {
   animation: animacionflow 30s ease infinite; }
 
@@ -400,12 +407,12 @@ header {
   margin: 1% auto 1% 0;
   color: grey; }
   .breadcrumbs a {
-    color: darkcyan; }
+    color: #008b8b; }
 
 /* PAGINAS DE ARTICULOS */
 /* Titulo */
 .title {
-  color: darkcyan;
+  color: #008b8b;
   margin: 5% auto 1% auto;
   text-align: center; }
 
@@ -420,8 +427,8 @@ header {
 .contenedor_tarjetav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  column-gap: 3%;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 3%;
   justify-items: center; }
 
 .tarjetav {
@@ -437,7 +444,7 @@ header {
     max-width: 500px; }
   .tarjetav__contenido--video {
     border-radius: 10px;
-    min-width: fit-content;
+    min-width: 100%;
     min-height: 300px;
     margin: 3% 0 3% 0; }
   .tarjetav__contenido--titulo {
@@ -449,28 +456,29 @@ header {
     margin: 0 auto; }
   .tarjetav__contenido--boton {
     margin: auto 1% 0 auto;
-    border: 1px solid darkcyan; }
+    border: 1px solid #008b8b; }
   .tarjetav__table {
     border: 0px;
     font-size: 11px;
     text-align: center;
-    background: linear-gradient(90deg, rgba(36, 11, 111, 0) 0%, paleturquoise 5% 95%, rgba(0, 0, 0, 0) 100%); }
+    background: linear-gradient(90deg, rgba(36, 11, 111, 0) 0%, paleturquoise 5% 95%, rgba(0, 0, 0, 0) 100%);
+    min-width: 100%; }
   .tarjetav__tablelarge {
     border: 0px;
     font-size: 16px;
     text-align: center;
-    background: linear-gradient(90deg, rgba(36, 11, 111, 0) 0%, lemonchiffon 5% 95%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg, rgba(36, 11, 111, 0) 0%, #fffacd 5% 95%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
     margin: 4% auto auto auto; }
 
 /* GALERIA - IMAGENES */
 /* Seccion contenedora de imagenes */
 .contenedor_imagenes {
-  padding: 3%;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
   gap: 5%;
+  padding: 3%;
   justify-items: center;
   align-items: center;
   min-height: auto;
@@ -508,8 +516,8 @@ header {
 form {
   min-width: max-content;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5%; }
 
 fieldset {
@@ -534,14 +542,14 @@ fieldset {
   fieldset button {
     color: slategrey;
     background-color: azure;
-    border: 1px solid darkcyan;
+    border: 1px solid #008b8b;
     border-radius: 10px;
     padding: 5px;
     max-width: fit-content;
     margin: 2%; }
 
 legend {
-  background-color: lemonchiffon;
+  background-color: #fffacd;
   color: gray;
   padding: 5px;
   border-radius: 3%;
@@ -560,13 +568,13 @@ input {
 .tarjetav__contenido--boton {
   transition: all 0.2s ease; }
   .tarjetav__contenido--boton:hover {
-    border: 1px solid darkcyan;
-    background-color: lemonchiffon;
+    border: 1px solid #008b8b;
+    background-color: #fffacd;
     transition: all 0.2s ease; }
   .tarjetav__contenido--boton:active {
-    border: 1px solid aquamarine;
+    border: 1px solid #7fffd4;
     background-color: white;
-    color: aquamarine;
+    color: #7fffd4;
     transition: all 0.2s ease; }
 
 /* Breadcrumbs links */
@@ -575,41 +583,41 @@ input {
   background-color: transparent; }
   .breadcrumbs a:hover {
     border-radius: 15%;
-    background-color: lemonchiffon;
-    color: darkcyan;
+    background-color: #fffacd;
+    color: #008b8b;
     transition: all 0.2s ease; }
 
 /* Boton de formulario contacto */
 fieldset button {
   transition: all 0.2s ease; }
   fieldset button:hover {
-    border: 1px solid darkcyan;
-    background-color: lemonchiffon;
+    border: 1px solid #008b8b;
+    background-color: #fffacd;
     transition: all 0.2s ease; }
   fieldset button:active {
-    border: 1px solid aquamarine;
+    border: 1px solid #7fffd4;
     background-color: white;
-    color: aquamarine;
+    color: #7fffd4;
     transition: all 0.2s ease; }
 
 /* Espacios a rellenar de formulario contacto */
 input:focus {
   outline: none;
-  border: 1px solid aquamarine;
+  border: 1px solid #7fffd4;
   transition: all 1s; }
 
 select:focus {
   outline: none;
-  border: 1px solid aquamarine;
+  border: 1px solid #7fffd4;
   transition: all 1s; }
 
 /* FOOTER */
 footer {
-  background-color: cadetblue; }
+  background-color: #5f9ea0; }
 
 /* Footer general */
 .footer {
-  background-color: cadetblue;
+  background-color: #5f9ea0;
   /* Titulo de "Contacto" */
   /* Titulo de "Seguinos" */ }
   .footer__links {
@@ -619,7 +627,7 @@ footer {
     flex-direction: column;
     padding-left: 25%; }
   .footer__links a {
-    color: blanchedalmond;
+    color: #ffebcd;
     margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
@@ -640,6 +648,8 @@ footer {
 .pie {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 0%;
   padding: 5%; }
 
 /* Iconos del footer */
@@ -658,7 +668,7 @@ footer {
     transform: scale(1.3);
     transition: all 0.2s ease; }
   .footericons:active {
-    box-shadow: 0px 0px 5px aquamarine;
+    box-shadow: 0px 0px 5px #7fffd4;
     transition: all 0.1s ease; }
 
 @media (max-width: 810px) {
@@ -695,6 +705,8 @@ footer {
       font-style: bold; }
   .contenedor_tarjetav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column; }
   .tarjetav {
     margin-bottom: 5%; }
@@ -702,6 +714,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
+    gap: 5%;
     min-height: max-content;
     margin: 10% auto 10% auto; }
     .contenedor_imagenes--img img {
@@ -715,6 +728,8 @@ footer {
     font-size: 22px; }
   .separador_cubos {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 0 auto; }
   .breadcrumbs {
@@ -733,8 +748,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(auto, 1fr);
-    margin: 10% auto 10% auto;
-    gap: 10px; }
+    gap: 10px;
+    margin: 10% auto 10% auto; }
     .contenedor_imagenes--img img {
       max-width: auto;
       max-height: 315px; }
@@ -756,8 +771,11 @@ footer {
     margin-bottom: 10%; }
     .footer__links a {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start; }
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column; }
   .pie {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column; } }

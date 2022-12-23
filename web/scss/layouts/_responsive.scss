@@ -69,8 +69,7 @@
     }
 
     .contenedor_tarjetav {
-        display: flex;
-        flex-direction: column;
+        @include templateFlex(center, center, true);
     }
 
     .tarjetav {
@@ -79,9 +78,7 @@
 
     // RESPONSIVE GRID IMAGENES 810px
     .contenedor_imagenes {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
+        @include templateGrid(2, auto, 3, auto, 5%);
         min-height: max-content;
         margin: 10% auto 10% auto;
 
@@ -106,9 +103,8 @@
     
     // RESPONSIVE SEPARADOR CUBOS 540px
     .separador_cubos {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+        @include templateFlex(center, center, true);
+        margin: 0 auto;
     }
 
     // RESPONSIVE BREADCRUMBS 540px
@@ -140,11 +136,8 @@
 
     // RESPONSIVE GRID DE IMAGENES 540px
     .contenedor_imagenes {
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(auto, 1fr);
+        @include templateGrid(1, auto, auto, 1fr, 10px);
         margin: 10% auto 10% auto;
-        gap: 10px;
 
         &--img img{
             max-width: auto;
@@ -183,14 +176,11 @@
         margin-bottom: 10%;
 
         & a{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            @include templateFlex(center, flex-start, true);
         }
     }
 
     .pie {
-        display: flex;
-        flex-direction: column;
+        @include templateFlex(center, flex-start, true);
     }
 }

@@ -5,7 +5,7 @@
     color: grey;
 
     & a {
-        color: darkcyan;
+        color: $colorL;
     }
 }
 
@@ -13,7 +13,7 @@
 /* PAGINAS DE ARTICULOS */
 /* Titulo */
 .title {
-    color: darkcyan;
+    color: $colorL;
     margin: 5% auto 1% auto;
     text-align: center;
 }
@@ -30,11 +30,7 @@
 /* Tarjetas de videos */
 .contenedor_tarjetav {
     @extend .contenedor_tarjeta;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    column-gap: 3%;
+    @include templateGrid(2, 1fr, 1, 1fr, 3%);
     justify-items: center;
 }
 
@@ -52,7 +48,7 @@
     /* Imagen del articulo destacado */
     &__contenido--video {
         border-radius: 10px;
-        min-width: fit-content;
+        min-width: 100%;
         min-height: 300px;
         margin: 3% 0 3% 0;
     }
@@ -79,7 +75,7 @@
         @extend .tarjeta__contenido--boton;
         
         margin: auto 1% 0 auto;
-        border: 1px solid darkcyan;
+        border: 1px solid $colorL;
     }
 
     /* Tabla de estadisticas arriba del video */
@@ -88,6 +84,7 @@
         font-size: 11px;
         text-align: center;
         background: linear-gradient(90deg, rgba(36,11,111,0) 0%, paleturquoise 5% 95%, rgba(0,0,0,0) 100%);
+        min-width: 100%;
     }
 
     /* Tabla de estadisticas arriba de mapa e imagenes */
@@ -95,7 +92,7 @@
         border: 0px;
         font-size: 16px;
         text-align: center;
-        background: linear-gradient(90deg, rgba(36,11,111,0) 0%, lemonchiffon 5% 95%, rgba(0,0,0,0) 100%);
+        background: linear-gradient(90deg, rgba(36,11,111,0) 0%, $color2 5% 95%, rgba(0,0,0,0) 100%);
         width: 100%;
         margin: 4% auto auto auto;
     }
@@ -105,15 +102,12 @@
 /* GALERIA - IMAGENES */
 /* Seccion contenedora de imagenes */
 .contenedor_imagenes {
+    @include templateGrid(3, auto, 2, auto, 5%);
     padding: 3%;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
-    gap: 5%;
     justify-items: center;
     align-items: center;
     min-height: auto;
-    overflow:visible;
+    overflow: visible;
     margin: 2% 0 5% 0;
 
     /* Imagenes del contenedor de imagenes */
@@ -123,9 +117,7 @@
         border: 1px solid grey;
         box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
     
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include templateFlex(center, center, false);
     }
     
     &--img img{
@@ -156,9 +148,7 @@
 /* SECCION CONTACTO */
 form {
     min-width: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include templateFlex(center, center, false);
     margin-bottom: 5%;
 }
 
@@ -191,7 +181,7 @@ fieldset {
     & button {
       color: slategrey;
       background-color: azure;
-      border: 1px solid darkcyan;
+      border: 1px solid $colorL;
       border-radius: 10px;
       padding: 5px;
   
@@ -202,7 +192,7 @@ fieldset {
   }
 
   legend {
-    background-color: lemonchiffon;
+    background-color: $color2;
     color: gray;
     padding: 5px;
     border-radius: 3%;
@@ -225,14 +215,14 @@ fieldset {
 .tarjetav__contenido--boton {
     transition: all 0.2s ease;
     &:hover {
-        border: 1px solid darkcyan;
-        background-color: lemonchiffon;
+        border: 1px solid $colorL;
+        background-color: $color2;
         transition: all 0.2s ease;
     }
     &:active {
-        border: 1px solid aquamarine;
+        border: 1px solid $colorH;
         background-color: white;
-        color: aquamarine;
+        color: $colorH;
         transition: all 0.2s ease;
     }
 }
@@ -243,8 +233,8 @@ fieldset {
     background-color: transparent;
     &:hover {
         border-radius: 15%;
-        background-color: lemonchiffon;
-        color: darkcyan;
+        background-color: $color2;
+        color: $colorL;
         transition: all 0.2s ease;
     }
 }
@@ -253,14 +243,14 @@ fieldset {
 fieldset button {
     transition: all 0.2s ease;
     &:hover {
-        border: 1px solid darkcyan;
-        background-color: lemonchiffon;
+        border: 1px solid $colorL;
+        background-color: $color2;
         transition: all 0.2s ease;
     }
     &:active {
-        border: 1px solid aquamarine;
+        border: 1px solid $colorH;
         background-color: white;
-        color: aquamarine;
+        color: $colorH;
         transition: all 0.2s ease;
     }
 }
@@ -268,11 +258,11 @@ fieldset button {
 /* Espacios a rellenar de formulario contacto */
 input:focus {
     outline: none;
-    border: 1px solid aquamarine;
+    border: 1px solid $colorH;
     transition: all 1s;
 }
 select:focus {
     outline: none;
-    border: 1px solid aquamarine;
+    border: 1px solid $colorH;
     transition: all 1s;
 }

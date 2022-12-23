@@ -17,3 +17,29 @@ body {
     max-width: 1320px;
     margin: 0 auto;
 }
+
+// VARIABLES
+$colorF: #ffebcd;
+$color1: #5f9ea0;
+$colorH: #7fffd4;
+$colorL: #008b8b;
+$color2: #fffacd;
+
+
+// MIXINS
+@mixin templateFlex($justify, $align, $column) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    
+    @if ($column == true) {
+        flex-direction: column;
+    }
+}
+
+@mixin templateGrid($reps, $cols, $reps2, $rows, $gap) {
+    display: grid;
+    grid-template-columns: repeat($reps, $cols);
+    grid-template-rows: repeat($reps2, $rows);
+    gap: $gap;
+}

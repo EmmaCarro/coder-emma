@@ -1,29 +1,24 @@
 /* FOOTER */
 // Footer contenedor
 footer {
-    background-color:cadetblue;
+    background-color:$color1;
 }
 
 /* Footer general */
 .footer {
-    background-color:cadetblue;
+    background-color:$color1;
 
     /* Titulo de "Contacto" */
     &__links {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
+        @include templateFlex(center, flex-start, true);
         padding-left: 25%;
     }
 
     &__links a {
-        color: blanchedalmond;
+        color: $colorF;
         margin-bottom: 20px;
         
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        @include templateFlex(flex-start, center, false);
     }
 
     &__links--titulo {
@@ -48,8 +43,7 @@ footer {
 
 // Columnas contenedor
 .pie {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include templateGrid(2, 1fr, 1, 1fr, 0%);
     padding: 5%;
 }
 
@@ -73,7 +67,7 @@ footer {
         transition: all 0.2s ease;
     }
     &:active {
-        box-shadow: 0px 0px 5px aquamarine;
+        box-shadow: 0px 0px 5px $colorH;
         transition: all 0.1s ease;
     }
 }

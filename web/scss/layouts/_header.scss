@@ -1,15 +1,13 @@
 /* BARRA DE NAVEGACION */
 /* Header entero */
 header {
-    background-color: cadetblue;
+    background-color: $color1;
     padding: 20px 10px;
 }
 
 /* Contenedor de la barra de navegacion */
 .encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include templateFlex(space-between, center, false);
     max-width: 100%;
     margin: 0 auto;
 }
@@ -29,9 +27,7 @@ header {
     /* Titulo de la pagina */
     &_title {
       text-decoration: none;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      @include templateFlex(flex-start, center, false);
       margin: 0 auto 0 10px;
 
       & a {
@@ -45,8 +41,7 @@ header {
 
     // * Icono o logo al lado de titulo de pagina */
     &_icon {
-      display: flex;
-      justify-content: center;
+      @include templateFlex(center, center, false);
       margin-right: 5px;
       width: 40px;
       height: 40px;
@@ -61,7 +56,7 @@ header {
       text-decoration: none;
       font-family: 'Quicksand', sans-serif;
       font-weight: 400;
-      color: blanchedalmond;
+      color: $colorF;
     }
 }
 
@@ -97,7 +92,7 @@ header {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: darkcyan;
+  background-color: $colorL;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
   z-index: 1;
@@ -106,7 +101,7 @@ header {
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: lemonchiffon;
+  color: $color2;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
@@ -140,14 +135,14 @@ header {
     }
 
     &:active {
-        text-shadow: 0px 0px 10px aquamarine;
+        text-shadow: 0px 0px 10px $colorH;
         transition: all 0.1s ease;
     }
 }
 
 /* Navbar menu*/
 .navbar li a {
-    background-image: linear-gradient(lemonchiffon, lemonchiffon);
+    background-image: linear-gradient($color2, $color2);
     background-size: 0 1px;
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -155,7 +150,7 @@ header {
 
     &:hover {
         color: white;
-        border-bottom: 1px solid lemonchiffon;
+        border-bottom: 1px solid $color2;
         border-radius: 15%;
         background-size: 100% 1px;
         transition: 0.1s ease-in;
@@ -163,9 +158,9 @@ header {
 
     &:active {
         background-size: 100% 1px;
-        color: aquamarine;
-        border-bottom: 1px solid aquamarine;
-        background-image: linear-gradient(aquamarine, aquamarine);
+        color: $colorH;
+        border-bottom: 1px solid $colorH;
+        background-image: linear-gradient($colorH, $colorH);
         border-radius: 15%;
         transition: 0.1s ease-in;
     }
@@ -187,7 +182,7 @@ header {
 }
 #menu__toggle:checked ~ .menu__box {
   right: 0;
-  background-color: darkcyan;
+  background-color: $colorL;
   max-height: 25%;
 }
 .menu__btn > span,
@@ -197,7 +192,7 @@ header {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: lemonchiffon;
+  background-color: $color2;
   transition-duration: .25s;
 }
 .menu__btn > span::before {

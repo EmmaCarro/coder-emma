@@ -10,13 +10,10 @@
     color: white;
     margin: 0 0 0 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include templateFlex(center, center, true);
 
     &_titulo {
-        text-shadow: 1px 1px 10px aquamarine;
+        text-shadow: 1px 1px 10px $colorH;
     }
 
     &_subtitulo {
@@ -29,15 +26,12 @@
 /* SEPARADOR DEBAJO DEL BANNER */
 /* Contenedor de todo el separador */
 .separador_frase {
-    background-color:lemonchiffon;
-    background-image: radial-gradient(lemonchiffon, blanchedalmond 60% 80%);
+    background-color: $color2;
+    background-image: radial-gradient($color2, $colorF 60% 80%);
     min-height: 200px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include templateFlex(space-evenly, center, false);
     padding: 0 20% 0 20%;
-    flex-direction: row;
     flex-wrap: nowrap;
 
     /* Texto del separador */
@@ -62,27 +56,25 @@
 /* FRASES INFORMATIVAS EN 4 CUBOS */
 /* contenedor de cubos */
 .separador_cubos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include templateGrid(2, 1fr, 1, 1fr, 0%);
     margin: 0 auto;
 
     /* Cubos en general */
     & div {
-        display: flex;
+        @include templateFlex(center, center, false);
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         height: auto;
     }
 
     /* Cubo de titulo */
     &__titulo {
-        background-color: cadetblue;
+        background-color: $color1;
         font-weight: 100;
         font-size: 30px;
         color: azure;
         text-align: center;
         padding: 7%;
+        min-width: 100%;
     }
 
     /* Cubo de texto */
@@ -100,11 +92,9 @@
 /* TARJETAS DESTACADOS */
 .contenedor_tarjeta {
     padding: 5% 1% 5% 1%;
-    background-color: blanchedalmond;
+    background-color: $colorF;
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include templateFlex(space-evenly, center, false);
 }
 
 .tarjeta {
@@ -113,11 +103,11 @@
 
     /* Solapa "Destacado" arriba de cada tarjeta */
     &__label {
-        color:cadetblue;
+        color:$color1;
         background-color: honeydew;
         border: solid 2px;
         border-radius: 10px;
-        border-color: aquamarine;
+        border-color: $colorH;
         margin-bottom: 1px;
         max-width: fit-content;
         min-width: auto;
@@ -131,9 +121,8 @@
         padding: 3%;
         min-height: 410px;
         box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
-        display: flex;
-        flex-direction: column;
-        
+        @include templateFlex(space-evenly, center, true);
+
         width: fit-content;
         min-width: auto;
     }
@@ -165,7 +154,7 @@
         font-size: 18px;
         font-weight: 600;
         font-style: bold;
-        color:darkcyan;
+        color:$colorL;
         margin: 2% 0 2% 0;
     }
     
@@ -197,19 +186,15 @@
 /* HOME */
 /* SEPARADOR "DE CIRCULOS" ANTES DE FOOTER */
 .separador_circulos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @include templateGrid(3, 1fr, 1, 1fr, 0%);
     margin: auto;
     padding: 10% 5% 7% 5%;
-    background-color:lemonchiffon;
-    background-image: linear-gradient(blanchedalmond, lemonchiffon 20% 100%);
+    background-color: $color2;
+    background-image: linear-gradient($colorF, $color2 20% 100%);
 
     /* Contenedores de cada imagen y texto del separador */
     &__combo {    
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
+        @include templateFlex(space-evenly, center, true);
     }
     
     /* Imagenes del separador antes del footer */
@@ -236,21 +221,21 @@
     transition: all 0.2s ease;
 
     &:hover {
-        border: 1px solid darkcyan;
-        background-color: lemonchiffon;
+        border: 1px solid $colorL;
+        background-color: $color2;
         transition: all 0.2s ease;
     }
 
     &:active {
-        border: 1px solid aquamarine;
+        border: 1px solid $colorH;
         background-color: white;
-        color: aquamarine;
+        color: $colorH;
         transition: all 0.2s ease;
     }
 }
 
 
-/* HERO */
+/* HERO ANIMACION */
 .hero {
     animation: animacionflow 30s ease infinite;
 }
