@@ -18,7 +18,7 @@ footer {
         color: $colorF;
         margin-bottom: 20px;
         
-        @include templateFlex(flex-start, center, false);
+        @include templateFlex(flex-start, flex-start, false);
     }
 
     &__links--titulo {

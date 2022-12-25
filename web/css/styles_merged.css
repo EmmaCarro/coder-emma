@@ -5,9 +5,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   /* Sacarle el subrayado a los links */
-  text-decoration: none;
-  scroll-behavior: smooth; }
+  text-decoration: none; }
 
 /* Tipografia general */
 body {
@@ -17,11 +17,15 @@ body {
   max-width: 1320px;
   margin: 0 auto; }
 
+/* Sacarle mas subrayado a los links porque Bootstrap los vuelve a meter */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
 /* BARRA DE NAVEGACION */
 /* Header entero */
 header {
   background-color: #5f9ea0;
-  padding: 20px 10px; }
+  padding: 1.5% 1%; }
 
 /* Contenedor de la barra de navegacion */
 .encabezado {
@@ -60,11 +64,14 @@ header {
     height: 40px; }
   .navbar li {
     margin: 0 15px; }
-  .navbar a {
+  .navbar_option, .nav-item, .nav-item:hover, .nav-item:active {
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     color: #ffebcd; }
+
+.dropdown-menu {
+  background-color: #5f9ea0; }
 
 /* Hamburguesa */
 .hamburger-menu {
@@ -76,7 +83,7 @@ header {
 
 .menu__btn {
   position: absolute;
-  top: 35px;
+  top: 27px;
   right: 30px;
   width: 33px;
   height: 33px;
@@ -94,7 +101,7 @@ header {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #008b8b;
+  background-color: #5f9ea0;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   transition-duration: .25s;
   z-index: 1; }
@@ -130,25 +137,40 @@ header {
     transition: all 0.1s ease; }
 
 /* Navbar menu*/
-.navbar li a {
+.navbar_option, .nav-item, .nav-item:hover, .nav-item:active {
   background-image: linear-gradient(#fffacd, #fffacd);
   background-size: 0 1px;
   background-position: 0 100%;
   background-repeat: no-repeat;
   transition: 0.1s ease-in; }
-  .navbar li a:hover {
+  .navbar_option:hover, .nav-item:hover {
     color: white;
-    border-bottom: 1px solid #fffacd;
-    border-radius: 15%;
+    border-bottom: 0px solid #fffacd;
     background-size: 100% 1px;
     transition: 0.1s ease-in; }
-  .navbar li a:active {
+  .navbar_option:active, .nav-item:active {
     background-size: 100% 1px;
     color: #7fffd4;
-    border-bottom: 1px solid #7fffd4;
+    border-bottom: 0px solid #7fffd4;
     background-image: linear-gradient(#7fffd4, #7fffd4);
-    border-radius: 15%;
     transition: 0.1s ease-in; }
+
+.dropdown-item {
+  border: 1px solid transparent; }
+
+.dropdown-item:hover {
+  border: 1px solid #ffebcd;
+  transition: 0s linear; }
+
+.dropdown-item:active {
+  background-size: 100%;
+  border: 1px solid #7fffd4;
+  background-image: linear-gradient(#7fffd4, #7fffd4);
+  transition: 0s linear; }
+
+.dropdown-item:visited {
+  background-color: #5f9ea0;
+  color: #fffacd; }
 
 /* ANIMACION HAMBURGUESA */
 #menu__toggle:checked + .menu__btn > span {
@@ -164,7 +186,7 @@ header {
 
 #menu__toggle:checked ~ .menu__box {
   right: 0;
-  background-color: #008b8b;
+  background-color: #5f9ea0;
   max-height: 25%; }
 
 .menu__btn > span,
@@ -403,10 +425,10 @@ header {
 
 /* TODAS LAS PAGINAS EXCEPTO HOME */
 /* Navegacion o breadcrumbs */
-.breadcrumbs {
+.breadcrumb {
   margin: 1% auto 1% 0;
   color: grey; }
-  .breadcrumbs a {
+  .breadcrumb a {
     color: #008b8b; }
 
 /* PAGINAS DE ARTICULOS */
@@ -578,12 +600,11 @@ input {
     transition: all 0.2s ease; }
 
 /* Breadcrumbs links */
-.breadcrumbs a {
+.breadcrumb-item {
   border-radius: 15%;
   background-color: transparent; }
-  .breadcrumbs a:hover {
+  .breadcrumb-item:hover {
     border-radius: 15%;
-    background-color: #fffacd;
     color: #008b8b;
     transition: all 0.2s ease; }
 
@@ -631,7 +652,7 @@ footer {
     margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: flex-start; }
   .footer__links--titulo {
     font-weight: 600;
     font-size: 18px;
@@ -767,13 +788,15 @@ footer {
   .hamburger-menu {
     display: block; }
   .footer__links {
-    padding: 0% 0% 0% 25%;
+    padding-left: 15%;
     margin-bottom: 10%; }
     .footer__links a {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column; }
+  .footer__redes {
+    padding-left: 15%; }
   .pie {
     display: flex;
     justify-content: center;

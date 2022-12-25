@@ -21,8 +21,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
     <!-- libreria de animacion aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- css local -->
     <link rel="stylesheet" href="../css/styles_merged.css" />
@@ -39,14 +42,26 @@
                 </div>
                 <nav>
                     <ul class="navbar">
-                        <li><a href="../index.html" >Inicio</a></li>
-                        <li><a href="../pages/galeria.html" >Galeria</a></li>
-                        <li><a href="../pages/mapa.html" >Mapa</a></li>
-                        <li><a href="../pages/contacto.html" >Contacto</a></li>
+                        <li><a class="navbar_option" href="../index.html" >Inicio</a></li>
+
+                        <!-- Dropdown Menu Bootstrap -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Galeria
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../pages/articles/00ranchokika.html">Rancho Kika</a></li>
+                              <li><a class="dropdown-item" href="../pages/articles/01cabanarosita.html">Cabaña Rosita</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="../pages/galeria.html">Videos</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a class="navbar_option" href="../pages/mapa.html" >Mapa</a></li>
+                        <li><a class="navbar_option" href="../pages/contacto.html" >Contacto</a></li>
                     </ul>
 
                     <!-- HAMBURGUESA REEMPLAZO DE MENU DE NAVEGACION PARA MOBILE -->
-                    <!-- DEBERIA USAR JAVASCRIPT -->
                     <div class="hamburger-menu">
                         <input id="menu__toggle" type="checkbox" />
                         <label class="menu__btn" for="menu__toggle">
@@ -66,10 +81,13 @@
 
 
     <main>
-        <!-- BREADCRUMBS -->
-        <div class="breadcrumbs">
-            <p><a href="../index.html">Inicio</a> > Mapa</p>
-        </div>
+        <!-- BREADCRUMBS de Bootstrap -->
+        <nav style="--bs-breadcrumb-divider: '>'"; aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Mapa</li>
+            </ol>
+        </nav>
 
         <!-- TITULO -->
         <h1 class="title">MAPA</h1>
@@ -116,6 +134,9 @@
         </div>
         </section>  
     </footer>
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
     <!-- script de la libreria de animacion aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

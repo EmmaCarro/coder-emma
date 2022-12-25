@@ -4,9 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
     /* Sacarle el subrayado a los links */
     text-decoration: none;
-    scroll-behavior: smooth;
 }
 
 /* Tipografia general */
@@ -18,12 +19,10 @@ body {
     margin: 0 auto;
 }
 
-// VARIABLES
-$colorF: #ffebcd;
-$color1: #5f9ea0;
-$colorH: #7fffd4;
-$colorL: #008b8b;
-$color2: #fffacd;
+/* Sacarle mas subrayado a los links porque Bootstrap los vuelve a meter */
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
 
 
 // MIXINS

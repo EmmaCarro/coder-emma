@@ -1,6 +1,6 @@
 /* TODAS LAS PAGINAS EXCEPTO HOME */
 /* Navegacion o breadcrumbs */
-.breadcrumbs {
+.breadcrumb {
     margin: 1% auto 1% 0;
     color: grey;
 
@@ -228,12 +228,12 @@ fieldset {
 }
 
 /* Breadcrumbs links */
-.breadcrumbs a {
+.breadcrumb-item {
     border-radius: 15%;
     background-color: transparent;
+    
     &:hover {
         border-radius: 15%;
-        background-color: $color2;
         color: $colorL;
         transition: all 0.2s ease;
     }

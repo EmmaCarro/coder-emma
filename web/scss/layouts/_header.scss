@@ -2,7 +2,7 @@
 /* Header entero */
 header {
     background-color: $color1;
-    padding: 20px 10px;
+    padding: 1.5% 1%;
 }
 
 /* Contenedor de la barra de navegacion */
@@ -52,12 +52,18 @@ header {
       margin: 0 15px;
     }
 
-    & a {    
+    &_option {    
       text-decoration: none;
       font-family: 'Quicksand', sans-serif;
       font-weight: 400;
       color: $colorF;
     }
+}
+
+// Dropdown menu de Galeria
+.dropdown-menu {
+  // Cambiarle el color de fondo al dropdown menu
+  background-color: $color1;
 }
 
 
@@ -73,7 +79,7 @@ header {
 
 .menu__btn {
   position: absolute;
-  top: 35px;
+  top: 27px;
   right: 30px;
   width: 33px;
   height: 33px;
@@ -92,7 +98,7 @@ header {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: $colorL;
+  background-color: $color1;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
   z-index: 1;
@@ -141,7 +147,7 @@ header {
 }
 
 /* Navbar menu*/
-.navbar li a {
+.navbar_option {
     background-image: linear-gradient($color2, $color2);
     background-size: 0 1px;
     background-position: 0 100%;
@@ -150,8 +156,7 @@ header {
 
     &:hover {
         color: white;
-        border-bottom: 1px solid $color2;
-        border-radius: 15%;
+        border-bottom: 0px solid $color2;
         background-size: 100% 1px;
         transition: 0.1s ease-in;
     }
@@ -159,12 +164,36 @@ header {
     &:active {
         background-size: 100% 1px;
         color: $colorH;
-        border-bottom: 1px solid $colorH;
+        border-bottom: 0px solid $colorH;
         background-image: linear-gradient($colorH, $colorH);
-        border-radius: 15%;
         transition: 0.1s ease-in;
     }
 }
+
+// ANIMACION DROPDOWN MENU GALERIA
+.nav-item, .nav-item:hover, .nav-item:active {
+  @extend .navbar_option;
+}
+.dropdown-item {
+  border: 1px solid transparent;
+}
+.dropdown-item:hover {
+  border: 1px solid $colorF;
+  transition: 0s linear;
+}
+.dropdown-item:active{
+  background-size: 100%;
+  border: 1px solid $colorH;
+  background-image: linear-gradient($colorH, $colorH);
+  transition: 0s linear;
+}
+.dropdown-item:visited {
+  // Sacarle el fondo blanco que le mete bootstrap al haberlo clickeado
+  background-color: $color1;
+  // Sacarle el color negro que le mete bootstrap al haberlo clickeado
+  color: $color2;
+}
+
 
 
 /* ANIMACION HAMBURGUESA */
@@ -182,7 +211,7 @@ header {
 }
 #menu__toggle:checked ~ .menu__box {
   right: 0;
-  background-color: $colorL;
+  background-color: $color1;
   max-height: 25%;
 }
 .menu__btn > span,
