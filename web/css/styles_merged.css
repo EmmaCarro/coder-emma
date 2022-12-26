@@ -213,6 +213,10 @@ header {
 /* HOME */
 /* BANNER */
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-weight: 300;
   font-size: 28px;
   background: url(../images/herobanner.jpg) no-repeat;
@@ -220,11 +224,7 @@ header {
   min-height: 350px;
   max-height: 400px;
   color: white;
-  margin: 0 0 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
+  margin: 0 0 0 0; }
   .hero_titulo {
     text-shadow: 1px 1px 10px #7fffd4; }
   .hero_subtitulo {
@@ -291,11 +291,11 @@ header {
 /* HOME */
 /* TARJETAS DESTACADOS */
 .contenedor_tarjeta, .contenedor_tarjetav {
-  padding: 5% 1% 5% 1%;
-  background-color: #ffebcd;
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: top;
+  padding: 5% 1% 5% 1%;
+  background-color: #ffebcd; }
 
 .tarjeta, .tarjetav {
   max-width: fit-content;
@@ -317,15 +317,15 @@ header {
     min-width: auto;
     padding: 5px; }
   .tarjeta__contenido, .tarjetav__contenido {
-    background-color: powderblue;
-    border-radius: 10px;
-    padding: 3%;
-    min-height: 410px;
-    box-shadow: 5px 5px 25px 3px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+    background-color: powderblue;
+    border-radius: 10px;
+    padding: 1em;
+    min-height: 462px;
+    box-shadow: 5px 5px 25px 3px rgba(0, 0, 0, 0.4);
     width: fit-content;
     min-width: auto; }
   .tarjeta__contenido--imagen1 {
@@ -377,7 +377,7 @@ header {
   margin: auto;
   padding: 10% 5% 7% 5%;
   background-color: #fffacd;
-  background-image: linear-gradient(#ffebcd, #fffacd 20% 100%);
+  background-image: linear-gradient(#ffebcd, rgba(35, 240, 255, 0.5) 20% 100%);
   /* Contenedores de cada imagen y texto del separador */
   /* Imagenes del separador antes del footer */
   /* Texto del separador antes del footer */ }
@@ -387,10 +387,13 @@ header {
     align-items: center;
     flex-direction: column; }
   .separador_circulos__img {
-    border-radius: 40px;
-    opacity: 40%;
-    filter: grayscale(100%); }
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+    opacity: 70%;
+    filter: grayscale(50%); }
   .separador_circulos__txt {
+    position: relative;
     font-weight: 300;
     font-style: italic;
     font-size: 18px;
@@ -422,6 +425,36 @@ header {
     background-position: 100% 70%, 0 0; }
   100% {
     background-position: 0% 30%, 0 0; } }
+
+.separador_circulos {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent; }
+  .separador_circulos:before, .separador_circulos:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    min-width: 300vw;
+    min-height: 300vw;
+    background-color: #ffebcd;
+    animation: rotacion infinite; }
+  .separador_circulos:before {
+    bottom: 13vh;
+    border-radius: 45%;
+    animation-duration: 10s; }
+  .separador_circulos:after {
+    bottom: 10vh;
+    opacity: .5;
+    border-radius: 47%;
+    animation-duration: 10s; }
+
+@keyframes rotacion {
+  0% {
+    transform: translate(-50%, 0) rotateZ(0deg); }
+  50% {
+    transform: translate(-50%, -2%) rotateZ(180deg); }
+  100% {
+    transform: translate(-50%, 0%) rotateZ(360deg); } }
 
 /* TODAS LAS PAGINAS EXCEPTO HOME */
 /* Navegacion o breadcrumbs */
@@ -475,7 +508,8 @@ header {
     text-align: center; }
   .tarjetav__contenido--texto {
     max-width: fit-content;
-    margin: 0 auto; }
+    padding: 0 auto;
+    margin: 1em 1px 2em 1px; }
   .tarjetav__contenido--boton {
     margin: auto 1% 0 auto;
     border: 1px solid #008b8b; }
@@ -694,9 +728,14 @@ footer {
 
 @media (max-width: 810px) {
   .contenedor_tarjeta, .contenedor_tarjetav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column; }
   .tarjeta, .tarjetav {
     margin-bottom: 5%; }
+    .tarjeta__contenido, .tarjetav__contenido {
+      min-height: fit-content; }
   .separador_cubos__titulo {
     font-size: 28px; }
   .separador_cubos__texto {

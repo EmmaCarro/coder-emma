@@ -4,11 +4,15 @@
 
     // RESPONSIVE TARJETA PAGINA HOME 810px
     .contenedor_tarjeta {
-        flex-direction: column;
+        @include templateFlex(space-evenly, center, true);
     }
 
     .tarjeta {
         margin-bottom: 5%;
+
+        &__contenido{
+            min-height: fit-content;
+        }
     }
 
     // RESPONSIVE SEPARADOR CUBOS 810px

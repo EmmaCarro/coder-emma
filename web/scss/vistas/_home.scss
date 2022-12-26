@@ -1,6 +1,8 @@
 /* HOME */
 /* BANNER */
 .hero {
+    @include templateFlex(center, center, true);
+
     font-weight: 300;
     font-size: 28px;
     background: url(../images/herobanner.jpg) no-repeat;
@@ -9,8 +11,6 @@
     max-height: 400px;
     color: white;
     margin: 0 0 0 0;
-
-    @include templateFlex(center, center, true);
 
     &_titulo {
         text-shadow: 1px 1px 10px $colorH;
@@ -91,10 +91,9 @@
 /* HOME */
 /* TARJETAS DESTACADOS */
 .contenedor_tarjeta {
+    @include templateFlex(space-evenly, top, false);
     padding: 5% 1% 5% 1%;
     background-color: $colorF;
-
-    @include templateFlex(space-evenly, center, false);
 }
 
 .tarjeta {
@@ -116,12 +115,12 @@
     
     /* DIV que engloba la imagen, titulo y texto de la tarjeta */
     &__contenido {
+        @include templateFlex(space-evenly, center, true);
         background-color: powderblue;
         border-radius: 10px;
-        padding: 3%;
-        min-height: 410px;
+        padding: 1em;
+        min-height: 462px;
         box-shadow: 5px 5px 25px 3px rgba(0,0,0,0.40);
-        @include templateFlex(space-evenly, center, true);
 
         width: fit-content;
         min-width: auto;
@@ -190,7 +189,7 @@
     margin: auto;
     padding: 10% 5% 7% 5%;
     background-color: $color2;
-    background-image: linear-gradient($colorF, $color2 20% 100%);
+    background-image: linear-gradient($colorF, $acuoso 20% 100%);
 
     /* Contenedores de cada imagen y texto del separador */
     &__combo {    
@@ -199,13 +198,16 @@
     
     /* Imagenes del separador antes del footer */
     &__img {
-        border-radius: 40px;
-        opacity: 40%;
-        filter:grayscale(100%);
+        max-height: 50px;
+        max-width: 50px;
+        border-radius: 50%;
+        opacity: 70%;
+        filter: grayscale(50%);
     }
     
     /* Texto del separador antes del footer */
     &__txt {
+        position: relative;
         font-weight: 300;
         font-style: italic;
         font-size: 18px;
@@ -243,4 +245,41 @@
   0%   { background-position: 0% 30%, 0 0;}
   50%  { background-position: 100% 70%, 0 0;}
   100% { background-position: 0% 30%, 0 0;}
+}
+
+
+// AGUA DEL SEPARADOR DE CIRCULOS
+.separador_circulos {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        min-width: 300vw;
+        min-height: 300vw;
+        background-color: $colorF;
+        animation: rotacion infinite;
+    }
+  
+    &:before {
+        bottom: 13vh;
+        border-radius: 45%;
+        animation-duration: 10s;
+    }
+  
+    &:after {
+        bottom: 10vh;
+        opacity: .5;
+        border-radius: 47%;
+        animation-duration: 10s;
+    }
+}
+
+@keyframes rotacion {
+  0% {transform: translate(-50%, 0) rotateZ(0deg);}
+  50% {transform: translate(-50%, -2%) rotateZ(180deg);}
+  100% {transform: translate(-50%, 0%) rotateZ(360deg);}
 }
