@@ -98,7 +98,7 @@
     }
 
     // AGUA DE SEPARADOR DE CIRCULOS
-    .separador_circulos {
+    .container-fluid {
         &:before {
             bottom: 11vh;
         }
@@ -114,7 +114,7 @@
 @media (max-width: 540px) {
 
     // RESPONSIVE HERO 540px
-    .hero_subtitulo {
+    .carousel-caption p {
         font-size: 22px;
     }
     
@@ -151,18 +151,7 @@
         display: none;
     }
 
-    // RESPONSIVE GRID DE IMAGENES 540px
-    .contenedor_imagenes {
-        @include templateGrid(1, auto, auto, 1fr, 10px);
-        margin: 10% auto 10% auto;
-
-        &--img img{
-            max-width: auto;
-            max-height: 315px;
-        }
-    }
-
-    // RESPONSIVE TARJETA DE VIDEOS 540px
+    // RESPONSIVE TARJETA DE VIDEOS 810px
     .tarjetav__tablelarge {
         table-layout: fixed;
         width: 100%;
@@ -176,6 +165,17 @@
     .tarjetav__table th {
         font-size: 9px;
         font-style: bold;
+    }
+    
+    // RESPONSIVE GRID DE IMAGENES 540px
+    .contenedor_imagenes {
+        @include templateGrid(1, auto, auto, 1fr, 10px);
+        margin: 10% auto 10% auto;
+
+        &--img img{
+            max-width: auto;
+            max-height: 315px;
+        }
     }
 
     // RESPONSIVE HEADER 540px
@@ -206,7 +206,7 @@
     }
 
     // AGUA DE SEPARADOR DE CIRCULOS
-    .separador_circulos {
+    .container-fluid {
         &:before {
             bottom: 8vh;
         }

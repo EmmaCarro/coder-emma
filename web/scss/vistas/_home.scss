@@ -1,7 +1,9 @@
 /* HOME */
-/* BANNER */
+/* HERO */
 .carousel-caption {
-    // @include templateFlex(center, center, true);
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
 
     font-weight: 300;
     font-size: 28px;
@@ -179,20 +181,20 @@
 
 /* HOME */
 /* SEPARADOR "DE CIRCULOS" ANTES DE FOOTER */
-.separador_circulos {
-    @include templateGrid(3, 1fr, 1, 1fr, 0%);
+.container-fluid {
+    // @include templateGrid(3, 1fr, 1, 1fr, 0%);
     margin: auto;
     padding: 10% 5% 7% 5%;
     background-color: $color2;
     background-image: linear-gradient($colorF, $acuoso 20% 100%);
 
     /* Contenedores de cada imagen y texto del separador */
-    &__combo {    
-        @include templateFlex(space-evenly, center, true);
-    }
+    // &__combo {    
+    //     @include templateFlex(space-evenly, center, true);
+    // }
     
     /* Imagenes del separador antes del footer */
-    &__img {
+    & img {
         max-height: 50px;
         max-width: 50px;
         border-radius: 50%;
@@ -201,7 +203,7 @@
     }
     
     /* Texto del separador antes del footer */
-    &__txt {
+    & h4 {
         position: relative;
         font-weight: 300;
         font-style: italic;
@@ -232,19 +234,8 @@
 }
 
 
-/* HERO ANIMACION */
-.hero {
-    animation: animacionflow 30s ease infinite;
-}
-@keyframes animacionflow {
-  0%   { background-position: 0% 30%, 0 0;}
-  50%  { background-position: 100% 70%, 0 0;}
-  100% { background-position: 0% 30%, 0 0;}
-}
-
-
 // AGUA DEL SEPARADOR DE CIRCULOS
-.separador_circulos {
+.container-fluid {
     position: relative;
     overflow: hidden;
     background-color: transparent;
