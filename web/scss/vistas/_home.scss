@@ -1,22 +1,17 @@
 /* HOME */
 /* BANNER */
-.hero {
-    @include templateFlex(center, center, true);
+.carousel-caption {
+    // @include templateFlex(center, center, true);
 
     font-weight: 300;
     font-size: 28px;
-    background: url(../images/herobanner.jpg) no-repeat;
-	background-size: cover;
-	min-height: 350px;
-    max-height: 400px;
-    color: white;
     margin: 0 0 0 0;
 
-    &_titulo {
+    & h1 {
         text-shadow: 1px 1px 10px $colorH;
     }
 
-    &_subtitulo {
+    & p {
         text-shadow: 0px 0px 5px black;
     }
 }

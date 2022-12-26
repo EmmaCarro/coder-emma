@@ -212,22 +212,13 @@ header {
 
 /* HOME */
 /* BANNER */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.carousel-caption {
   font-weight: 300;
   font-size: 28px;
-  background: url(../images/herobanner.jpg) no-repeat;
-  background-size: cover;
-  min-height: 350px;
-  max-height: 400px;
-  color: white;
   margin: 0 0 0 0; }
-  .hero_titulo {
+  .carousel-caption h1 {
     text-shadow: 1px 1px 10px #7fffd4; }
-  .hero_subtitulo {
+  .carousel-caption p {
     text-shadow: 0px 0px 5px black; }
 
 /* HOME */
@@ -781,7 +772,11 @@ footer {
       max-width: auto;
       max-height: 415px; }
   .footer__links {
-    padding: 0%; } }
+    padding: 0%; }
+  .separador_circulos:before {
+    bottom: 11vh; }
+  .separador_circulos:after {
+    bottom: 8vh; } }
 
 @media (max-width: 540px) {
   .hero_subtitulo {
@@ -840,4 +835,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .separador_circulos:before {
+    bottom: 8vh; }
+  .separador_circulos:after {
+    bottom: 5vh; } }

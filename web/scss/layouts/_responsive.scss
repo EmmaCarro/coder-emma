@@ -96,6 +96,17 @@
     .footer__links {
         padding: 0%;
     }
+
+    // AGUA DE SEPARADOR DE CIRCULOS
+    .separador_circulos {
+        &:before {
+            bottom: 11vh;
+        }
+    
+        &:after {
+            bottom: 8vh;
+        }
+    }
 }
 
 
@@ -192,5 +203,16 @@
 
     .pie {
         @include templateFlex(center, flex-start, true);
+    }
+
+    // AGUA DE SEPARADOR DE CIRCULOS
+    .separador_circulos {
+        &:before {
+            bottom: 8vh;
+        }
+    
+        &:after {
+            bottom: 5vh;
+        }
     }
 }
